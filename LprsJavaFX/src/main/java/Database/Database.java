@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Database {
     private String serveur = "localhost";
-    private String nomDeLaBase = "projetlprs_java";
+    private String nomDeLaBase = "lprs_javafx";
     private String utilisateur = "root";
     private String motDePasse = "";
 
