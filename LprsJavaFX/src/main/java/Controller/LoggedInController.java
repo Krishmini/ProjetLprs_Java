@@ -23,7 +23,7 @@ public class LoggedInController implements Initializable {
         bt_deconnexion.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                DBUtils.changeScene(event, "logged-in.fxml", "Log in!", null, null, null, null, null);
+                DBUtils.changeScene(event, "logged-in.fxml", "Hello!", null, null, null, null, null);
 
             }
         });

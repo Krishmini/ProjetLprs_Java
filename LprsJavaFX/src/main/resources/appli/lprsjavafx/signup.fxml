@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
 <children>
-   <AnchorPane prefHeight="410.0" prefWidth="235.0" style="-fx-background-color: #FFFFFF;">
+   <AnchorPane prefHeight="445.0" prefWidth="238.0" style="-fx-background-color: #FFFFFF;">
       <children>
          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -21,7 +21,7 @@
          </Label>
       </children>
    </AnchorPane>
-   <AnchorPane prefHeight="428.0" prefWidth="367.0" style="-fx-background-color: #00008B;">
+   <AnchorPane prefHeight="473.0" prefWidth="360.0" style="-fx-background-color: #00008B;">
       <children>
             <Label layoutX="15.0" layoutY="145.0" text="PRENOM :" textFill="WHITE" underline="true">
                <font>
@@ -43,24 +43,37 @@
                <Font name="Arial Rounded MT Bold" size="18.0" />
             </font>
          </Label>
-         <TextField fx:id="tf_email" layoutX="112.0" layoutY="193.0" prefHeight="32.0" prefWidth="214.0" />
+         <TextField fx:id="tf_mail" layoutX="112.0" layoutY="193.0" prefHeight="32.0" prefWidth="214.0" />
          <TextField fx:id="tf_mdp" layoutX="114.0" layoutY="248.0" prefHeight="32.0" prefWidth="213.0" />
             <TextField fx:id="tf_nom" layoutX="113.0" layoutY="84.0" prefHeight="32.0" prefWidth="213.0" />
             <TextField fx:id="tf_prenom" layoutX="114.0" layoutY="140.0" prefHeight="32.0" prefWidth="213.0" />
-         <Label layoutX="73.0" layoutY="381.0" text="Vous avez déjà un compte ?" textFill="WHITE">
+         <Label layoutX="72.0" layoutY="407.0" text="Vous avez déjà un compte ?" textFill="WHITE">
             <font>
                <Font name="Arial Rounded MT Bold" size="12.0" />
             </font>
          </Label>
-            <Button fx:id="bt_inscription" layoutX="168.0" layoutY="343.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #FFFFFF;" text="Inscription" />
-         <Button fx:id="bt_rd_connexion" layoutX="237.0" layoutY="376.0" mnemonicParsing="false" style="-fx-background-color: #00008B; -fx-cursor: hand;" text="Connexion !" textFill="#00fcff" />
-         <MenuButton fx:id="tf_role" layoutX="112.0" layoutY="297.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="214.0" style="-fx-background-color: #FFFFFF;" text="Role" textAlignment="CENTER">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Professeur" />
-                <MenuItem mnemonicParsing="false" text="Secretaire" />
-                  <MenuItem mnemonicParsing="false" text="Gestionaire" />
-              </items>
-            </MenuButton>
+            <Button fx:id="bt_inscription" layoutX="135.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" text="Inscription" />
+         <Button fx:id="bt_rd_connexion" layoutX="234.0" layoutY="402.0" mnemonicParsing="false" style="-fx-background-color: #00008B; -fx-cursor: hand;" text="Connexion !" textFill="#00fcff" />
+            <RadioButton fx:id="rb_Professeur" layoutX="114.0" layoutY="312.0" mnemonicParsing="false" text="Professeur" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb_Secretaire" layoutX="224.0" layoutY="312.0" mnemonicParsing="false" text="Secretaire" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb_Gestionnaire" layoutX="112.0" layoutY="338.0" mnemonicParsing="false" text="Gestionaire" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="11.0" layoutY="309.0" text="ROLE :" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
       </children></AnchorPane>
 </children>
 </HBox>
