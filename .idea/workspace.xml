@@ -4,67 +4,79 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93ca3aeb-a860-4cd0-998c-2ed1a134cf7a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProjetLprs_Java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentations/.$MCD.drawio.bkp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentations/MCD.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentations/MLD.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentations/lprs_javafx (2).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/lib/mysql-connector-j-9.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Controller/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Controller/DBUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Controller/LoggedInController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Controller/SignUpController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Database/Database.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/Commande.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/DemandeFourniture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/DossierInscription.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/FicheEtudiant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/Fournisseur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/Quantite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/RendezVous.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/Stock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/Model/Utilisateur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/appli/lprsjavafx/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/appli/lprsjavafx/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/resources/appli/lprsjavafx/50-Lycee-Robert-Schuman.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/resources/appli/lprsjavafx/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/resources/appli/lprsjavafx/lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/resources/appli/lprsjavafx/logged-in.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/resources/appli/lprsjavafx/login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LprsJavaFX/src/main/resources/appli/lprsjavafx/signup.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculatrice/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentations/.$MCD.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentations/MCD.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentations/MLD.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentations/lprs_javafx (2).sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/DossierInscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/FicheEtudiantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/LoggedInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Commande.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/DemandeFourniture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/DossierInscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/FicheEtudiant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Fournisseur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Quantite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/RendezVous.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Utilisateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/DossierInscriptionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/FicheEtudiantApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/inscriptionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/50-Lycee-Robert-Schuman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/DossierInscription-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/logged-in.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/signup.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2sX6evccSiyEzaPbRJTL86yeCc2" />
+  <component name="ProjectId" id="2rZhYIOZWe0cuIT2t9QeWjYFSJA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -74,39 +86,78 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/krimi/IdeaProjects/ProjetLprs_Java",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Lprs-java/src/main/resources/appli",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.JavaFX",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Lprs-java\src\main\resources\appli" />
+      <recent name="C:\Lprs-java\src\main\java\Model" />
+      <recent name="C:\Lprs-java\src\main\java\Controller" />
+      <recent name="C:\Lprs-java\src\main\java\appli" />
+      <recent name="C:\Lprs-java\Documentations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krimi\IdeaProjects\Lprs-java\src\main\resources\appli" />
+      <recent name="C:\Users\krimi\IdeaProjects\Lprs-java\src\main\resources\com\example\lprsjava" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="appli" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Lprs-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Lprs-java" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="93ca3aeb-a860-4cd0-998c-2ed1a134cf7a" name="Changes" comment="" />
-      <created>1738589671034</created>
+      <changelist id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="" />
+      <created>1736772553913</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1738589671034</updated>
-      <workItem from="1738589672034" duration="13000" />
-      <workItem from="1738589791186" duration="329000" />
-      <workItem from="1738590378465" duration="1362000" />
+      <updated>1736772553913</updated>
+      <workItem from="1736772556231" duration="5077000" />
+      <workItem from="1736862660115" duration="945000" />
+      <workItem from="1737376641257" duration="12030000" />
+      <workItem from="1737725473042" duration="4125000" />
+      <workItem from="1738148874841" duration="12276000" />
+      <workItem from="1738225307014" duration="4858000" />
+      <workItem from="1738242106650" duration="11262000" />
+      <workItem from="1738312179559" duration="6698000" />
+      <workItem from="1738324874271" duration="6148000" />
+      <workItem from="1738579815146" duration="378000" />
+      <workItem from="1738586197072" duration="1515000" />
+      <workItem from="1738588034609" duration="600000" />
+      <workItem from="1738588680438" duration="1337000" />
+      <workItem from="1738590380592" duration="885000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

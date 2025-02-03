@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.inscriptionController">
+    <children>
+        <AnchorPane prefHeight="445.0" prefWidth="238.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@50-Lycee-Robert-Schuman.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="46.0" layoutY="179.0" prefHeight="198.0" prefWidth="139.0" text="Logiciel Préparation &#10;a la rentrée" textAlignment="CENTER">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="473.0" prefWidth="360.0" style="-fx-background-color: #00008B;">
+            <children>
+                <Label layoutX="15.0" layoutY="145.0" text="PRENOM :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="15.0" layoutY="89.0" text="NOM :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="188.0" prefHeight="42.0" prefWidth="139.0" text="EMAIL :" textAlignment="CENTER" textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="242.0" text="MOTS DE&#10; PASSE :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nomField" layoutX="112.0" layoutY="193.0" prefHeight="32.0" prefWidth="214.0" />
+                <TextField fx:id="prenomField" layoutX="114.0" layoutY="248.0" prefHeight="32.0" prefWidth="213.0" />
+                <TextField fx:id="mailField" layoutX="113.0" layoutY="84.0" prefHeight="32.0" prefWidth="213.0" />
+                <TextField fx:id="mdpField" layoutX="114.0" layoutY="140.0" prefHeight="32.0" prefWidth="213.0" />
+                <Label layoutX="72.0" layoutY="407.0" text="Vous avez déjà un compte ?" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Button fx:id="bt_inscription" layoutX="135.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" text="Inscription" onAction="#onInscrireButtonClick" />
+                <Button fx:id="bt_rd_connexion" layoutX="234.0" layoutY="402.0" mnemonicParsing="false" style="-fx-background-color: #00008B; -fx-cursor: hand;" text="Connexion !" textFill="#00fcff" />
+
+                <RadioButton fx:id="rb_Professeur" layoutX="114.0" layoutY="312.0" mnemonicParsing="false" text="Professeur" textFill="WHITE" />
+                <RadioButton fx:id="rb_Secretaire" layoutX="224.0" layoutY="312.0" mnemonicParsing="false" text="Secretaire" textFill="WHITE" />
+                <RadioButton fx:id="rb_Gestionnaire" layoutX="112.0" layoutY="338.0" mnemonicParsing="false" text="Gestionaire" textFill="WHITE" />
+
+
+                <Label layoutX="11.0" layoutY="309.0" text="ROLE :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+    </children>
+</HBox>
