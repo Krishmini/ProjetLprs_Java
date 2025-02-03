@@ -1,6 +1,6 @@
 package Controller;
 
-import Database.Database;
+import database.Database;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

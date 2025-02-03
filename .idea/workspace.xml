@@ -5,55 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentations/.$MCD.drawio.bkp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentations/MCD.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentations/MLD.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentations/lprs_javafx (2).sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/DossierInscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/FicheEtudiantController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/LoggedInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Commande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/DemandeFourniture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/DossierInscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/FicheEtudiant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Fournisseur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Quantite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/RendezVous.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Utilisateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/DossierInscriptionApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/FicheEtudiantApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/inscriptionApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/50-Lycee-Robert-Schuman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/DossierInscription-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/lock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/logged-in.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/signup.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/FicheEtudiantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/FicheEtudiantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +45,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Lprs-java/src/main/resources/appli",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/ProjetLprs_Java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -154,6 +111,7 @@
       <workItem from="1738588034609" duration="600000" />
       <workItem from="1738588680438" duration="1337000" />
       <workItem from="1738590380592" duration="885000" />
+      <workItem from="1738592029656" duration="680000" />
     </task>
     <servers />
   </component>

@@ -10,21 +10,21 @@ import java.sql.Connection;
 
 public class FicheEtudiantController {
     @FXML
-    public TextField nomField;
+    public TextField nom_eField;
     @FXML
-    public TextField prenomField;
+    public TextField prenom_eField;
     @FXML
     public TextField dernier_diplomeField;
     @FXML
-    public TextField emailField;
+    public TextField email_eField;
     @FXML
-    public TextField telephoneField;
+    public TextField telephone_eField;
     @FXML
-    public TextField villeField;
+    public TextField ville_eField;
     @FXML
-    public TextField cpField;
+    public TextField cp_eField;
     @FXML
-    public TextField rueField;
+    public TextField rue_eField;
     @FXML
     public Button creer;
     @FXML
@@ -45,18 +45,18 @@ public class FicheEtudiantController {
         enregistrerEtudiant();
     }
     private void enregistrerEtudiant() {
-        String sql = "INSERT INTO ficheetudiant (nom, prenom, dernier_diplome, email, telephone, ville, cp, rue) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO ficheetudiant (nom_e, prenom_e, dernier_diplome, email_e, telephone_e, ville_e, cp_e, rue_e) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         try (Connection connection = new Database().getConnexion();
              java.sql.PreparedStatement statement = connection.prepareStatement(sql)) {
 
-            statement.setString(1, nomField.getText());
-            statement.setString(2, prenomField.getText());
+            statement.setString(1, nom_eField.getText());
+            statement.setString(2, prenom_eField.getText());
             statement.setString(3, dernier_diplomeField.getText());
-            statement.setString(4, emailField.getText());
-            statement.setString(5, telephoneField.getText());
-            statement.setString(6, villeField.getText());
-            statement.setString(7, cpField.getText());
-            statement.setString(8, rueField.getText());
+            statement.setString(4, email_eField.getText());
+            statement.setString(5, telephone_eField.getText());
+            statement.setString(6, ville_eField.getText());
+            statement.setString(7, cp_eField.getText());
+            statement.setString(8, rue_eField.getText());
 
             int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {

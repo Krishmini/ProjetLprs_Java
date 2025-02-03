@@ -72,14 +72,14 @@
                   <Font name="Arial Rounded MT Bold" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="nomField" layoutX="116.0" layoutY="7.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="prenomField" layoutX="116.0" layoutY="53.0" prefHeight="24.0" prefWidth="213.0" />
+            <TextField fx:id="nom_eField" layoutX="116.0" layoutY="7.0" prefHeight="24.0" prefWidth="213.0" />
+            <TextField fx:id="prenom_eField" layoutX="116.0" layoutY="53.0" prefHeight="24.0" prefWidth="213.0" />
             <TextField fx:id="dernier_diplomeField" layoutX="116.0" layoutY="99.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="emailField" layoutX="116.0" layoutY="145.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="telephoneField" layoutX="116.0" layoutY="191.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="villeField" layoutX="116.0" layoutY="237.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="cpField" layoutX="116.0" layoutY="283.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="rueField" layoutX="116.0" layoutY="329.0" prefHeight="24.0" prefWidth="213.0" />
+            <TextField fx:id="email_eField" layoutX="116.0" layoutY="145.0" prefHeight="24.0" prefWidth="213.0" />
+            <TextField fx:id="telephone_eField" layoutX="116.0" layoutY="191.0" prefHeight="24.0" prefWidth="213.0" />
+            <TextField fx:id="ville_eField" layoutX="116.0" layoutY="237.0" prefHeight="24.0" prefWidth="213.0" />
+            <TextField fx:id="cp_eField" layoutX="116.0" layoutY="283.0" prefHeight="24.0" prefWidth="213.0" />
+            <TextField fx:id="rue_eField" layoutX="116.0" layoutY="329.0" prefHeight="24.0" prefWidth="213.0" />
             <Button layoutX="156.0" layoutY="364.0" mnemonicParsing="false" text="Créer" onAction="#onCreerButtonClick"/>
          </children>
       </AnchorPane>
