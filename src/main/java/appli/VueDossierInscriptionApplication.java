@@ -7,17 +7,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class DossierInscriptionApplication extends Application {
+public class VueDossierInscriptionApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(FicheEtudiantApplication.class.getResource("DossierInscription-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(FicheEtudiantApplication.class.getResource("VueDossierInscription-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("creer");
+        stage.setTitle("ok");
         stage.setScene(scene);
         stage.show();
     }
     public static void main(String[] args) {
         launch();
     }
-
 }

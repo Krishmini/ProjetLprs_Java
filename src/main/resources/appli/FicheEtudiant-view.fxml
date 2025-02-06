@@ -28,6 +28,7 @@
                   <Image url="@50-Lycee-Robert-Schuman.jpg" />
                </image>
             </ImageView>
+            <Button fx:id="btnRetour" layoutX="94.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleRetour" text="Retour" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="428.0" prefWidth="367.0" style="-fx-background-color: #00008B;">
@@ -80,7 +81,7 @@
             <TextField fx:id="ville_eField" layoutX="116.0" layoutY="237.0" prefHeight="24.0" prefWidth="213.0" />
             <TextField fx:id="cp_eField" layoutX="116.0" layoutY="283.0" prefHeight="24.0" prefWidth="213.0" />
             <TextField fx:id="rue_eField" layoutX="116.0" layoutY="329.0" prefHeight="24.0" prefWidth="213.0" />
-            <Button layoutX="156.0" layoutY="364.0" mnemonicParsing="false" text="Créer" onAction="#onCreerButtonClick"/>
+            <Button layoutX="156.0" layoutY="364.0" mnemonicParsing="false" onAction="#onCreerButtonClick" text="Créer" />
          </children>
       </AnchorPane>
    </children>

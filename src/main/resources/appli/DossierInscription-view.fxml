@@ -32,6 +32,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
+            <Button fx:id="btnRetour" layoutX="91.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleRetour" text="Retour" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="428.0" prefWidth="367.0" style="-fx-background-color: #00008B;">
@@ -77,7 +78,7 @@
             <TextField fx:id="heureField" layoutX="134.0" layoutY="180.0" />
             <TextField fx:id="filiere_interetField" layoutX="134.0" layoutY="308.0" />
             <TextField fx:id="motivation_etudiantField" layoutX="134.0" layoutY="236.0" />
-            <Button layoutX="134.0" layoutY="360.0" mnemonicParsing="false" text="Créer le dossier" onAction="#onCreer1ButtonClick"/>
+            <Button layoutX="134.0" layoutY="360.0" mnemonicParsing="false" onAction="#onCreer1ButtonClick" text="Créer le dossier" />
          </children>
          <HBox.margin>
             <Insets />

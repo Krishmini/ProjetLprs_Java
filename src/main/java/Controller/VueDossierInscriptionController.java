@@ -1,23 +1,15 @@
 package Controller;
 
 import database.Database;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.sql.Connection;
 
-public class DossierInscriptionController {
-    public Button btnRetour;
+public class VueDossierInscriptionController {
     @FXML
     public DatePicker datePicker;
     @FXML
@@ -32,9 +24,6 @@ public class DossierInscriptionController {
     public Button creer1;
 
     @FXML
-    private Label welcomeText;
-
-    @FXML
     public void initialize(){
         try{
             Database db = new Database();
@@ -47,11 +36,11 @@ public class DossierInscriptionController {
 
     @FXML
     protected void onCreer1ButtonClick() {
-        enregistrerDossier();
+        montrerDossier();
     }
 
-    private void enregistrerDossier(){
-        String sql = "INSERT INTO dossierinscription (date, heure, filiere_interet, motivation_etudiant) VALUES (?, ?, ?, ?)";
+    private void montrerDossier(){
+        String sql = "SELECT * FROM `dossierinscription` WHERE id_dossierInscription = id_dossierInscription;";
 
         try (Connection connection = new Database().getConnexion();
              java.sql.PreparedStatement statement = connection.prepareStatement(sql)) {
@@ -71,15 +60,5 @@ public class DossierInscriptionController {
             e.printStackTrace();
         }
 
-    }
-
-    public void handleRetour(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/EspaceSecretaire.fxml"));
-        Parent root = loader.load();
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
 }
