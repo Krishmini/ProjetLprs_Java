@@ -62,7 +62,7 @@ public class DBUtils extends Database {
                 psInsert.setString(5,mdp);
                 psInsert.executeUpdate();
 
-                changeScene(event, "logged-in.fxml", "Bienvenue!", nom, prenom, mdp, mail, role);
+                changeScene(event, "deconnexion.fxml", "Bienvenue!", nom, prenom, mdp, mail, role);
 
             }
         } catch (SQLException e) {
@@ -120,7 +120,7 @@ public class DBUtils extends Database {
                     String prenom1 = resultSet.getString("prenom");
                     String mdp1 = resultSet.getString("mdp");
                     if (mdp1.equals(mdp)) {
-                        changeScene(event, "logged-in.fxml", "Bienvenue!", mail, role1, nom1, prenom1, mdp1 );
+                        changeScene(event, "deconnexion.fxml", "Bienvenue!", mail, role1, nom1, prenom1, mdp1 );
                     } else {
                         System.out.println("Mots de passe incorecte !");
                         Alert alert = new Alert(Alert.AlertType.ERROR);

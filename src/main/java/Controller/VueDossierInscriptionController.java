@@ -8,8 +8,12 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class VueDossierInscriptionController {
+    private Connection connection;
     @FXML
     public DatePicker datePicker;
     @FXML
@@ -24,8 +28,8 @@ public class VueDossierInscriptionController {
     public Button creer1;
 
     @FXML
-    public void initialize(){
-        try{
+    public void initialize() {
+        try {
             Database db = new Database();
             Connection connection = (Connection) db.getConnexion();
 
@@ -39,26 +43,18 @@ public class VueDossierInscriptionController {
         montrerDossier();
     }
 
-    private void montrerDossier(){
+    private void montrerDossier() {
         String sql = "SELECT * FROM `dossierinscription` WHERE id_dossierInscription = id_dossierInscription;";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.setString(1, String.valueOf(datePicker));
+            preparedStatement.setString(2, String.valueOf(heureField));
+            preparedStatement.setString(2, String.valueOf(filiere_interetField));
+            preparedStatement.setString(2, String.valueOf(motivation_etudiantField));
+            ResultSet resultSet = preparedStatement.executeQuery();
 
-        try (Connection connection = new Database().getConnexion();
-             java.sql.PreparedStatement statement = connection.prepareStatement(sql)) {
 
-            statement.setString(1, datePicker.getValue().toString());
-            statement.setString(2, heureField.getText());
-            statement.setString(3, filiere_interetField.getText());
-            statement.setString(4, motivation_etudiantField.getText());
-
-            int rowsInserted = statement.executeUpdate();
-            if (rowsInserted > 0) {
-                System.out.println("Dossier ajouté avec succès !");
-            } else {
-                System.out.println("Échec de l'ajout.");
-            }
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

@@ -56,7 +56,7 @@ public class SignUpController implements Initializable {
         });
         bt_rd_connexion.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
-                DBUtils.changeScene(event, "/appli/lprsjavafx/login.fxml", "Log In!", null, null, null, null, null);
+                DBUtils.changeScene(event, "/appli/lprsjavafx/connexion.fxml", "Log In!", null, null, null, null, null);
             }
         });
 
