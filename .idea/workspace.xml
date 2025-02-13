@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/connexionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/editerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoggedInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/logged-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/connexion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/signup.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +125,11 @@
       <workItem from="1738856300326" duration="1844000" />
       <workItem from="1738926120507" duration="199000" />
       <workItem from="1738927043159" duration="4553000" />
-      <workItem from="1739111219311" duration="6385000" />
+      <workItem from="1739111219311" duration="7712000" />
+      <workItem from="1739190796449" duration="9400000" />
+      <workItem from="1739346529929" duration="8941000" />
+      <workItem from="1739378406844" duration="985000" />
+      <workItem from="1739434468539" duration="1964000" />
     </task>
     <servers />
   </component>
