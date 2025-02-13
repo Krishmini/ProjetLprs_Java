@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+=======
+    <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/connexionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoggedInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoggedInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/logged-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/connexion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/signup.fxml" beforeDir="false" />
+>>>>>>> cf73f65542f14d1e924e9f2514cc27c06ce6588d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,21 +33,30 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="JavaFXApplication" />
+=======
+>>>>>>> cf73f65542f14d1e924e9f2514cc27c06ce6588d
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+=======
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> cf73f65542f14d1e924e9f2514cc27c06ce6588d
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -49,13 +75,20 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+<<<<<<< HEAD
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+=======
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+>>>>>>> cf73f65542f14d1e924e9f2514cc27c06ce6588d
     &quot;last_opened_file_path&quot;: &quot;C:/ProjetLprs_Java&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< HEAD
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+=======
+>>>>>>> cf73f65542f14d1e924e9f2514cc27c06ce6588d
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -63,6 +96,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="appli" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Lprs-java\src\main\resources\appli" />
       <recent name="C:\Lprs-java\src\main\java\Model" />
@@ -124,13 +160,40 @@
       <workItem from="1738588034609" duration="600000" />
       <workItem from="1738588680438" duration="1337000" />
       <workItem from="1738590380592" duration="885000" />
+<<<<<<< HEAD
       <workItem from="1738592029656" duration="680000" />
       <workItem from="1738678069032" duration="2505000" />
       <workItem from="1739191680283" duration="9261000" />
+=======
+      <workItem from="1738592029656" duration="7658000" />
+      <workItem from="1738673153466" duration="4803000" />
+      <workItem from="1738744682487" duration="9076000" />
+      <workItem from="1738773531659" duration="599000" />
+      <workItem from="1738832335574" duration="13867000" />
+      <workItem from="1738856300326" duration="1844000" />
+      <workItem from="1738926120507" duration="199000" />
+      <workItem from="1738927043159" duration="4553000" />
+      <workItem from="1739111219311" duration="6385000" />
+>>>>>>> cf73f65542f14d1e924e9f2514cc27c06ce6588d
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur" />
+    <option name="LAST_COMMIT_MESSAGE" value="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur" />
   </component>
 </project>

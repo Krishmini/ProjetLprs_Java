@@ -7,17 +7,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class DossierInscriptionApplication extends Application {
+public class connexionApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(FicheEtudiantApplication.class.getResource("DossierInscription-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("creer");
+        FXMLLoader fxmlLoader = new FXMLLoader(FicheEtudiantApplication.class.getResource("connexion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 410);
+        stage.setTitle("connexion");
         stage.setScene(scene);
         stage.show();
     }
     public static void main(String[] args) {
         launch();
     }
-
 }
