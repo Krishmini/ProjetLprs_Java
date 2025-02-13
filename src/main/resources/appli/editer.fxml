@@ -50,7 +50,7 @@
 
                 <Button fx:id="editer" layoutX="135.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" text="Editer" onAction="#onEditerButtonClick" />
 
-
+git pull
             </children></AnchorPane>
     </children>
 </HBox>

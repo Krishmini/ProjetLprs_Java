@@ -10,6 +10,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +130,7 @@
       <workItem from="1739190796449" duration="9400000" />
       <workItem from="1739346529929" duration="8941000" />
       <workItem from="1739378406844" duration="985000" />
-      <workItem from="1739434468539" duration="1964000" />
+      <workItem from="1739434468539" duration="2764000" />
     </task>
     <servers />
   </component>
