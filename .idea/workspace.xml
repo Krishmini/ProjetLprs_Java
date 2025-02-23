@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/supprimerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/supprimerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/supprimer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/DemandeFournitureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/OrganiserRDVController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/DemandeFournitureApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/OrganiserRDVApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/DemandeFourniture.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EspaceGestionnaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EspaceGestionnaireController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EspaceSecretaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EspaceSecretaireController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/editerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/editerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DossierInscriptionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
@@ -148,7 +142,9 @@
       <workItem from="1740060482986" duration="4923000" />
       <workItem from="1740138228280" duration="4775000" />
       <workItem from="1740313346945" duration="886000" />
-      <workItem from="1740326323040" duration="1207000" />
+      <workItem from="1740326323040" duration="1929000" />
+      <workItem from="1740330187194" duration="161000" />
+      <workItem from="1740330357602" duration="3875000" />
     </task>
     <servers />
   </component>

@@ -35,17 +35,6 @@ public class DossierInscriptionController {
     private Label welcomeText;
 
     @FXML
-    public void initialize(){
-        try{
-            Database db = new Database();
-            Connection connection = (Connection) db.getConnexion();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
     protected void onCreer1ButtonClick() {
         enregistrerDossier();
     }
