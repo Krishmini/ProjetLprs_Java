@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/editerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/supprimerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/supprimerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/supprimer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EspaceGestionnaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EspaceGestionnaireController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EspaceSecretaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EspaceSecretaireController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/editerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/editerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,7 +58,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/ProjetLprs_Java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ProjetLprs_Java/src/main/resources/appli&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -66,11 +74,11 @@
       <recent name="appli" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ProjetLprs_Java\src\main\resources\appli" />
       <recent name="C:\Lprs-java\src\main\resources\appli" />
       <recent name="C:\Lprs-java\src\main\java\Model" />
       <recent name="C:\Lprs-java\src\main\java\Controller" />
       <recent name="C:\Lprs-java\src\main\java\appli" />
-      <recent name="C:\Lprs-java\Documentations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\krimi\IdeaProjects\Lprs-java\src\main\resources\appli" />
@@ -131,6 +139,16 @@
       <workItem from="1739346529929" duration="8941000" />
       <workItem from="1739378406844" duration="985000" />
       <workItem from="1739434468539" duration="2764000" />
+      <workItem from="1739442232178" duration="3648000" />
+      <workItem from="1739520629969" duration="8936000" />
+      <workItem from="1739780565205" duration="13352000" />
+      <workItem from="1739866994442" duration="17685000" />
+      <workItem from="1739951373889" duration="21216000" />
+      <workItem from="1740038564995" duration="9665000" />
+      <workItem from="1740060482986" duration="4923000" />
+      <workItem from="1740138228280" duration="4775000" />
+      <workItem from="1740313346945" duration="886000" />
+      <workItem from="1740326323040" duration="1207000" />
     </task>
     <servers />
   </component>

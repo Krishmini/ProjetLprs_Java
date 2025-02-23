@@ -3,12 +3,12 @@ package Controller;
 import database.Database;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
 import java.sql.Connection;
 
-public class editerController {
+public class supprimerController {
+
     @FXML
     public TextField nomField;
     @FXML
@@ -31,25 +31,17 @@ public class editerController {
         }
     }
     @FXML
-    protected void onEditerButtonClick() {modifierEtudiant();
+    protected void onSupprimerButtonClick() {supprimerEtudiant();
     }
-    private void modifierEtudiant() {
+    private void supprimerEtudiant() {
 
-        String sql = "UPDATE utilisateur SET nom=?, prenom=?, mail=?, mdp=? WHERE id_utilisateur=?";
+        String sql = "DELETE FROM `utilisateur` WHERE id_utilisateur=id_utilisateur;";
         try (Connection connection = new Database().getConnexion();
              java.sql.PreparedStatement statement = connection.prepareStatement(sql)) {
 
-            statement.setString(1, nomField.getText());
-            statement.setString(2, prenomField.getText());
-            statement.setString(3, mailField.getText());
-            statement.setString(4, mdpField.getText());
-
-            int userId = 1;
-            statement.setInt(5, userId);
-
             int rowsUpdated = statement.executeUpdate();
             if (rowsUpdated > 0) {
-                System.out.println("Étudiant modifié avec succès !");
+                System.out.println("Étudiant supprimé avec succès !");
             } else {
                 System.out.println("Échec.");
             }

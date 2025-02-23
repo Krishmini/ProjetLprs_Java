@@ -7,12 +7,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class editerApplication extends Application {
+public class supprimerApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(editerApplication.class.getResource("editer.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("editer");
+        FXMLLoader fxmlLoader = new FXMLLoader(editerApplication.class.getResource("supprimer.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 300, 200);
+        stage.setTitle("supprimer");
         stage.setScene(scene);
         stage.show();
     }

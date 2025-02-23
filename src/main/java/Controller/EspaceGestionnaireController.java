@@ -35,10 +35,16 @@ public class EspaceGestionnaireController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.show();
+        try {
+            stage.show();
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public void handleDemandeReapprovisionnement(ActionEvent event) throws IOException {
+
+     public void handleDemandeReapprovisionnement(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/VueDemandeReapprovisionnement-view.fxml"));
         Parent root = loader.load();
 
