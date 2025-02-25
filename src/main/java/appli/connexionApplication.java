@@ -10,7 +10,7 @@ import java.io.IOException;
 public class connexionApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(FicheEtudiantApplication.class.getResource("connexion.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(FicheEtudiantApplication.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 410);
         stage.setTitle("connexion");
         stage.setScene(scene);
