@@ -23,9 +23,8 @@ public class VueDossierInscriptionController {
 
     @FXML
     public TextField motivation_etudiantField;
-
     @FXML
-    public Button creer1;
+    public Button montrer;
 
     @FXML
     public void initialize() {
@@ -39,21 +38,27 @@ public class VueDossierInscriptionController {
     }
 
     @FXML
-    protected void onCreer1ButtonClick() {
+    protected void onMontrerButtonClick() {
         montrerDossier();
     }
 
     private void montrerDossier() {
-        String sql = "SELECT * FROM `dossierinscription` WHERE id_dossierInscription = id_dossierInscription;";
-        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-            preparedStatement.setString(1, String.valueOf(datePicker));
-            preparedStatement.setString(2, String.valueOf(heureField));
-            preparedStatement.setString(2, String.valueOf(filiere_interetField));
-            preparedStatement.setString(2, String.valueOf(motivation_etudiantField));
-            ResultSet resultSet = preparedStatement.executeQuery();
+        String sql = "SELECT * FROM `dossierinscription` WHERE id_dossierInscription = id_dossierInscription";
+        try (Connection connection = new Database().getConnexion();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
 
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                System.out.println("Dossier trouvé !");
+                System.out.println("Date : " + resultSet.getDate("date"));
+                System.out.println("Heure : " + resultSet.getString("heure"));
+                System.out.println("Filière d'intérêt : " + resultSet.getString("filiere_interet"));
+                System.out.println("Motivation : " + resultSet.getString("motivation_etudiant"));
+            } else {
+                System.out.println("Aucun dossier trouvé.");
+            }
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

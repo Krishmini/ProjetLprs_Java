@@ -53,6 +53,7 @@
                     </font>
                 </Label>
                 <Button fx:id="bt_inscription" layoutX="135.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;" text="Inscription" onAction="#onInscrireButtonClick" />
+                <Button fx:id="bt_rd_connexion" layoutX="234.0" layoutY="402.0" mnemonicParsing="false" style="-fx-background-color: #00008B; -fx-cursor: hand;" text="Connexion !" textFill="#00fcff" />
                 <Button fx:id="bt_rd_connexion" layoutX="234.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleconnexion" style="-fx-background-color: #00008B; -fx-cursor: hand;" text="Connexion !" textFill="#00fcff" />
 
                 <RadioButton fx:id="rb_Professeur" layoutX="114.0" layoutY="312.0" mnemonicParsing="false" text="Professeur" textFill="WHITE" />
