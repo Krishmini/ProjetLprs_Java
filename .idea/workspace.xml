@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/deconnexionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/deconnexionApplication.java" afterDir="false" />
+    <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="organiser rdv et demande fourniture">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/StockQuantite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DemandeFournitureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DemandeFournitureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/OrganiserRDVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/OrganiserRDVController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +22,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
         <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,41 +39,41 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2rZhYIOZWe0cuIT2t9QeWjYFSJA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/ProjetLprs_Java/src/main/resources/appli&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloApplication.executor": "Run",
+    "Application.connexionApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="appli" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\ProjetLprs_Java\src\main\resources\appli" />
       <recent name="C:\Lprs-java\src\main\resources\appli" />
       <recent name="C:\Lprs-java\src\main\java\Model" />
       <recent name="C:\Lprs-java\src\main\java\Controller" />
       <recent name="C:\Lprs-java\src\main\java\appli" />
+      <recent name="C:\Lprs-java\Documentations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\krimi\IdeaProjects\Lprs-java\src\main\resources\appli" />
@@ -99,10 +99,18 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="" />
+      <changelist id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="" />
       <created>1736772553913</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -121,6 +129,9 @@
       <workItem from="1738588034609" duration="600000" />
       <workItem from="1738588680438" duration="1337000" />
       <workItem from="1738590380592" duration="885000" />
+      <workItem from="1738592029656" duration="680000" />
+      <workItem from="1738678069032" duration="2505000" />
+      <workItem from="1739191680283" duration="9261000" />
       <workItem from="1738592029656" duration="7658000" />
       <workItem from="1738673153466" duration="4803000" />
       <workItem from="1738744682487" duration="9076000" />
@@ -129,27 +140,19 @@
       <workItem from="1738856300326" duration="1844000" />
       <workItem from="1738926120507" duration="199000" />
       <workItem from="1738927043159" duration="4553000" />
-      <workItem from="1739111219311" duration="7712000" />
-      <workItem from="1739190796449" duration="9400000" />
-      <workItem from="1739346529929" duration="8941000" />
-      <workItem from="1739378406844" duration="985000" />
-      <workItem from="1739434468539" duration="2764000" />
-      <workItem from="1739442232178" duration="3648000" />
-      <workItem from="1739520629969" duration="8936000" />
-      <workItem from="1739780565205" duration="13352000" />
-      <workItem from="1739866994442" duration="17685000" />
-      <workItem from="1739951373889" duration="21216000" />
-      <workItem from="1740038564995" duration="9665000" />
-      <workItem from="1740060482986" duration="4923000" />
-      <workItem from="1740138228280" duration="4775000" />
-      <workItem from="1740313346945" duration="886000" />
-      <workItem from="1740326323040" duration="1929000" />
-      <workItem from="1740330187194" duration="161000" />
-      <workItem from="1740330357602" duration="4735000" />
-      <workItem from="1740389978680" duration="17944000" />
-      <workItem from="1740477686900" duration="11414000" />
-      <workItem from="1740556127336" duration="1422000" />
+      <workItem from="1739111219311" duration="6385000" />
+      <workItem from="1740468898075" duration="51000" />
+      <workItem from="1740477872477" duration="15584000" />
     </task>
+    <task id="LOCAL-00001" summary="Gestion de stock, vue et OnClick">
+      <option name="closed" value="true" />
+      <created>1740500500892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740500500892</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +170,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur" />
-    <option name="LAST_COMMIT_MESSAGE" value="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur" />
+    <MESSAGE value="Gestion de stock, vue et OnClick" />
+    <MESSAGE value="organiser rdv et demande fourniture" />
+    <option name="LAST_COMMIT_MESSAGE" value="organiser rdv et demande fourniture" />
   </component>
 </project>
