@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1871df77-7ed4-4fdd-9869-16dd7275c74c" name="Changes" comment="DossierInscription, Fiche etudiant, Espace secretaire, gestionnaire,professeur">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/DemandeFournitureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/OrganiserRDVController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/DemandeFournitureApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/OrganiserRDVApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/DemandeFourniture.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/deconnexionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/deconnexionApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DossierInscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DemandeFournitureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DemandeFournitureController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/OrganiserRDVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/OrganiserRDVController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +145,10 @@
       <workItem from="1740313346945" duration="886000" />
       <workItem from="1740326323040" duration="1929000" />
       <workItem from="1740330187194" duration="161000" />
-      <workItem from="1740330357602" duration="3875000" />
+      <workItem from="1740330357602" duration="4735000" />
+      <workItem from="1740389978680" duration="17944000" />
+      <workItem from="1740477686900" duration="11414000" />
+      <workItem from="1740556127336" duration="1422000" />
     </task>
     <servers />
   </component>
