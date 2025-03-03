@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="organiser rdv et demande fourniture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EspaceProfesseurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EspaceProfesseurController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +150,7 @@
       <workItem from="1740851119285" duration="607000" />
       <workItem from="1740926970805" duration="4733000" />
       <workItem from="1740931735402" duration="61000" />
-      <workItem from="1741005611249" duration="2141000" />
+      <workItem from="1741005611249" duration="3922000" />
     </task>
     <task id="LOCAL-00001" summary="Gestion de stock, vue et OnClick">
       <option name="closed" value="true" />
