@@ -39,18 +39,6 @@ public class connexionController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("mailField: " + mailField);
-        System.out.println("mdpField: " + mdpField);
-    }
-
-    public void handleinscription(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/inscription-view.fxml"));
-        Parent root = loader.load();
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
     @FXML
     protected void handleLogin(ActionEvent event) {
@@ -62,16 +50,34 @@ public class connexionController {
             return;
         }
 
-        String sql = "SELECT * FROM utilisateur WHERE mail = ? AND mdp = ?";
+        String sql = "SELECT id_utilisateur, role FROM utilisateur WHERE mail = ? AND mdp = ?";
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if (resultSet.next()) {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/EspaceSecretaire.fxml"));
-                Parent root = loader.load();
+                String role = resultSet.getString("role").toLowerCase();
+                String fxmlFile = "";
 
+                switch (role) {
+                    case "secretaire":
+                        fxmlFile = "/appli/EspaceSecretaire.fxml";
+                        break;
+                    case "professeur":
+                        fxmlFile = "/appli/EspaceProfesseur.fxml";
+                        break;
+                    case "gestionnaire":
+                        fxmlFile = "/appli/EspaceGestionnaire.fxml";
+                        break;
+                    default:
+                        showAlert("Erreur", "Rôle inconnu !");
+                        return;
+                }
+
+
+                FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+                Parent root = loader.load();
                 Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 Scene scene = new Scene(root);
                 stage.setScene(scene);
@@ -90,5 +96,14 @@ public class connexionController {
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
+    }
+
+    public void handleinscription(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/inscription-view.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

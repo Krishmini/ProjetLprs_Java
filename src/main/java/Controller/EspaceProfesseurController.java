@@ -29,7 +29,7 @@ public class EspaceProfesseurController {
     }
 
     public void handleRDV(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/RDV-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/OrganiserRDV.fxml"));
         Parent root = loader.load();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -39,7 +39,7 @@ public class EspaceProfesseurController {
     }
 
     public void handleDemandeFourniture(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/DemandeFourniture-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/dashboard.fxml"));
         Parent root = loader.load();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

@@ -83,9 +83,6 @@ public class DashboardController implements Initializable {
     private Spinner<Integer> sp_quantite;
 
     @FXML
-    private Spinner<Integer> sp_quantite1;
-
-    @FXML
     private BarChart<?, ?> sp_stock;
 
     @FXML
@@ -113,9 +110,6 @@ public class DashboardController implements Initializable {
     private TextField tf_recherche;
 
     @FXML
-    private TextField tx_article;
-
-    @FXML
     private TextField tx_recherche;
 
     @FXML
@@ -132,39 +126,19 @@ public class DashboardController implements Initializable {
     private PreparedStatement pst;
     private Statement st;
     private ResultSet rs;
-    int currentValue ;
 
     public void demandeCommande(){
 
-        String sql = "INSERT INTO demandefourniture (article, quantite, raison, ref_stock, ref_utilisateur)"
-                + " VALUES ( ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO demandefourniture (id_demandeFourniture, article, quantite, raison, approuver, ref_stock, ref_utilisateur)"
+                + " VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         connect = database.getConnexion();
 
-        Alert alert;
         try {
-            if(sp_id_stock.getValue().describeConstable().isEmpty()||sp_quantite.getValue().describeConstable().isEmpty()||tf_raison.getText().isEmpty()){
-                alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Erreur");
-                alert.setHeaderText(null);
-                alert.setContentText("Veuillez remplir tous les champs");
-                alert.showAndWait();
-
-
-            }
-
-            pst = connect.prepareStatement(sql);
-            pst.setInt(1, sp_idstock.getValue());
-            pst.setInt(2, sp_quantite.getValue());
-            pst.setString(3, tf_raison.getText());
-            pst.executeUpdate();
-
-
 
         }catch (Exception e){e.printStackTrace();
 
         }
-
 
     }
 
@@ -326,17 +300,6 @@ public class DashboardController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         ajouterStockVueListeAvecQuantite();
-        SpinnerValueFactory<Integer> valueFactory =
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
-        valueFactory.setValue(1);
-        sp_idstock.setValueFactory(valueFactory);
-
-        SpinnerValueFactory<Integer> valueFactory2 =
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
-        valueFactory.setValue(1);
-        sp_quantite1.setValueFactory(valueFactory2);
-
-
     }
 
 

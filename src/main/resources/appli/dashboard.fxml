@@ -59,7 +59,7 @@
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="bt_logout" layoutX="12.0" layoutY="406.0" mnemonicParsing="false" onAction="#logout" prefHeight="20.0" prefWidth="56.0" style="-fx-background-color: #00ACC1;">
+                        <Button fx:id="logoutButton" layoutX="12.0" layoutY="406.0" mnemonicParsing="false" onAction="#logout" prefHeight="20.0" prefWidth="56.0" style="-fx-background-color: #00ACC1;">
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="1.5em" text="" textAlignment="CENTER" wrappingWidth="39.88572120666504" />
                            </graphic>
@@ -89,7 +89,7 @@
          <center>
             <AnchorPane fx:id="ap_main" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane fx:id="ap_home" layoutX="14.0" layoutY="30.0" prefHeight="424.8" prefWidth="452.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <AnchorPane fx:id="ap_home" layoutX="14.0" layoutY="30.0" prefHeight="424.8" prefWidth="452.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <AnchorPane layoutX="8.0" layoutY="14.0" prefHeight="110.0" prefWidth="639.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
                            <children>
@@ -121,12 +121,12 @@
                               <AnchorPane layoutX="10.0" layoutY="6.0" prefHeight="294.0" prefWidth="569.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
                                  <children>
                                     <BarChart fx:id="sp_stock" layoutX="12.0" layoutY="31.0" prefHeight="262.0" prefWidth="606.0">
-                                      <xAxis>
-                                        <CategoryAxis side="BOTTOM" />
-                                      </xAxis>
-                                      <yAxis>
-                                        <NumberAxis prefHeight="360.0" prefWidth="0.0" side="LEFT" />
-                                      </yAxis>
+                                       <xAxis>
+                                          <CategoryAxis side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis prefHeight="360.0" prefWidth="0.0" side="LEFT" />
+                                       </yAxis>
                                     </BarChart>
                                     <Label layoutX="272.0" layoutY="13.0" text="STOCK">
                                        <font>
@@ -145,13 +145,13 @@
                         <AnchorPane layoutX="238.0" layoutY="5.0" prefHeight="444.0" prefWidth="408.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
                            <children>
                               <TableView layoutX="2.0" layoutY="73.0" prefHeight="362.0" prefWidth="403.0">
-                                <columns>
-                                  <TableColumn fx:id="tc_idStock" prefWidth="37.5999755859375" text="Id" />
-                                  <TableColumn fx:id="tc_libelle" prefWidth="83.20004272460938" text="Libelle" />
+                                 <columns>
+                                    <TableColumn fx:id="tc_idStock" prefWidth="37.5999755859375" text="Id" />
+                                    <TableColumn fx:id="tc_libelle" prefWidth="83.20004272460938" text="Libelle" />
                                     <TableColumn fx:id="tc_quantite" prefWidth="52.79998779296875" text="quantité" />
                                     <TableColumn fx:id="tc_description" prefWidth="95.99993896484375" text="description" />
                                     <TableColumn fx:id="tc_idFournisseur" prefWidth="148.00003051757812" text="id du fournisseur" />
-                                </columns>
+                                 </columns>
                               </TableView>
                               <TextField fx:id="tx_recherche" layoutX="5.0" layoutY="26.0" prefHeight="26.0" prefWidth="177.0" text="   Recherche..." />
                               <FontAwesomeIconView fill="#8c8888" glyphName="SEARCH" layoutX="8.0" layoutY="43.0" text="" />
@@ -188,7 +188,7 @@
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="an_utiliser" layoutX="6.0" layoutY="-4.0" prefHeight="460.0" prefWidth="646.0" visible="false">
+                  <AnchorPane fx:id="an_utiliser" layoutX="6.0" layoutY="-4.0" prefHeight="460.0" prefWidth="646.0">
                      <children>
                         <AnchorPane layoutY="14.0" prefHeight="439.0" prefWidth="404.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
                            <children>
