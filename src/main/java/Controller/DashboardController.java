@@ -74,6 +74,7 @@ public class DashboardController implements Initializable {
     @FXML
     private TableColumn<StockQuantite, Integer> row_ref_fournisseur;
 
+    @FXML
     private Spinner<Integer> sp_id_stock;
 
     @FXML
@@ -126,6 +127,12 @@ public class DashboardController implements Initializable {
     private PreparedStatement pst;
     private Statement st;
     private ResultSet rs;
+    public Button logoutButton;
+    public AnchorPane scenePane;
+    private Stage stage;
+
+
+
 
     public void demandeCommande(){
 
@@ -267,24 +274,10 @@ public class DashboardController implements Initializable {
         }
     }
 
-    public void logout(){
-        try{
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setTitle("Confirmation");
-            alert.setHeaderText(null);
-            alert.setContentText("Voulez vous vraiment vous deconnecter ?");
-            Optional<ButtonType> option = alert.showAndWait();
-
-            if (option.get() == ButtonType.OK){
-
-                Parent root = FXMLLoader.load(getClass().getResource("/appli/connexion.fxml"));
-                Stage stage = new Stage();
-                Scene scene = new Scene(root);
-            }
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+    public void logout(ActionEvent event){
+        stage = (Stage) Ap_mainMain.getScene().getWindow();
+        System.out.println("You successfully logged out!");
+        stage.close();
     }
 
     public void minimize() {

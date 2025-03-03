@@ -14,16 +14,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+
 public class inscriptionController {
     public Button bt_rd_connexion;
     @FXML
-    private RadioButton rb_Professeur;
-    @FXML
-    private RadioButton rb_Secretaire;
-    @FXML
-    private RadioButton rb_Gestionnaire;
-    @FXML
-    public RadioButton role;
+    private RadioButton rb_Professeur, rb_Secretaire, rb_Gestionnaire;
     @FXML
     public TextField nomField;
     @FXML
@@ -65,7 +61,7 @@ public class inscriptionController {
 
         String sql = "INSERT INTO utilisateur (role, nom, prenom, mail, mdp) VALUES (?, ?, ?, ?, ?)";
         try (Connection connection = new Database().getConnexion();
-             java.sql.PreparedStatement statement = connection.prepareStatement(sql)) {
+             PreparedStatement statement = connection.prepareStatement(sql)) {
 
             statement.setString(1, roleSelectionne);
             statement.setString(2, nomField.getText());

@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="organiser rdv et demande fourniture">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/StockQuantite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentations/Gant-JAVA-LPRS.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/connexionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/connexionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +49,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.HelloApplication.executor": "Run",
-    "Application.connexionApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.connexionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ProjetLprs_Java-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="appli" />
@@ -78,6 +81,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\krimi\IdeaProjects\Lprs-java\src\main\resources\appli" />
       <recent name="C:\Users\krimi\IdeaProjects\Lprs-java\src\main\resources\com\example\lprsjava" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Controller" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="appli" />
@@ -143,6 +149,15 @@
       <workItem from="1739111219311" duration="6385000" />
       <workItem from="1740468898075" duration="51000" />
       <workItem from="1740477872477" duration="15584000" />
+      <workItem from="1740562640370" duration="12661000" />
+      <workItem from="1740581192410" duration="3092000" />
+      <workItem from="1740585716839" duration="2370000" />
+      <workItem from="1740643276794" duration="4224000" />
+      <workItem from="1740668468249" duration="77000" />
+      <workItem from="1740851119285" duration="607000" />
+      <workItem from="1740926970805" duration="4733000" />
+      <workItem from="1740931735402" duration="61000" />
+      <workItem from="1741005611249" duration="1411000" />
     </task>
     <task id="LOCAL-00001" summary="Gestion de stock, vue et OnClick">
       <option name="closed" value="true" />
@@ -152,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740500500892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="organiser rdv et demande fourniture">
+      <option name="closed" value="true" />
+      <created>1740562539037</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740562539037</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
