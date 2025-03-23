@@ -12,8 +12,7 @@ public class FicheEtudiant {
     private String rue_e;
     private int ref_utilisateur;
 
-    public FicheEtudiant(int id_ficheEtudiant, String nom_e, String prenom_e, String dernier_diplome, String email_e, String telephone_e, String ville_e, String cp_e, String rue_e, int ref_utilisateur) {
-        this.id_ficheEtudiant = id_ficheEtudiant;
+    public FicheEtudiant(String nom_e, String prenom_e, String dernier_diplome, String email_e, String telephone_e, String ville_e, String cp_e, String rue_e) {
         this.nom_e = nom_e;
         this.prenom_e = prenom_e;
         this.dernier_diplome = dernier_diplome;
@@ -22,7 +21,6 @@ public class FicheEtudiant {
         this.ville_e = ville_e;
         this.cp_e = cp_e;
         this.rue_e = rue_e;
-        this.ref_utilisateur = ref_utilisateur;
     }
 
     public int getId_ficheEtudiant() {
@@ -104,5 +102,19 @@ public class FicheEtudiant {
     public void setRef_utilisateur(int ref_utilisateur) {
         this.ref_utilisateur = ref_utilisateur;
     }
+
+    public FicheEtudiant(int id_ficheEtudiant, String nom_e, String prenom_e, String dernier_diplome, String email_e, String telephone_e, String ville_e, String cp_e, String rue_e, int ref_utilisateur) {
+        this.id_ficheEtudiant = id_ficheEtudiant;
+        this.nom_e = nom_e;
+        this.prenom_e = prenom_e;
+        this.dernier_diplome = dernier_diplome;
+        this.email_e = email_e;
+        this.telephone_e = telephone_e;
+        this.ville_e = ville_e;
+        this.cp_e = cp_e;
+        this.rue_e = rue_e;
+        this.ref_utilisateur = ref_utilisateur;
+    }
+
 }
 

@@ -1,5 +1,6 @@
-package Controller;
+package controller;
 
+import Model.DemandeFourniture;
 import Model.StockQuantite;
 import Model.Quantite;
 import database.Database;
@@ -8,10 +9,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -21,10 +19,9 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 import java.sql.*;
-import java.util.Optional;
 import java.util.ResourceBundle;
 
-public class DashboardController implements Initializable {
+public class EspaceGestionnaire implements Initializable {
 
     @FXML
     private AnchorPane Ap_mainMain;
@@ -83,6 +80,9 @@ public class DashboardController implements Initializable {
     private Spinner<Integer> sp_quantite;
 
     @FXML
+    private Spinner<Integer> sp_quantite1;
+
+    @FXML
     private BarChart<?, ?> sp_stock;
 
     @FXML
@@ -110,6 +110,9 @@ public class DashboardController implements Initializable {
     private TextField tf_recherche;
 
     @FXML
+    private TextField tx_article;
+
+    @FXML
     private TextField tx_recherche;
 
     @FXML
@@ -121,11 +124,28 @@ public class DashboardController implements Initializable {
     @FXML
     private Label txt_nouvelle_Demande;
 
-    private Connection connect = null;
+    private Connection connect;
     private Database database = new Database();
     private PreparedStatement pst;
-    private Statement st;
-    private ResultSet rs;
+    private Statement statement;
+    private ResultSet result;
+    int currentValue ;
+    private Stage stage;
+    private PreparedStatement prepare;
+    public Spinner sp_id;
+    public TextField sp_article;
+    public Spinner sp_quantite_demande;
+    public TextField sp_raison;
+
+    @FXML
+    private TableView<DemandeFourniture> addFourniture_tableView;
+    public TableColumn<DemandeFourniture, Integer> addFourniture_row_id;
+    public TableColumn<DemandeFourniture, String> addFourniture_row_article;
+    public TableColumn<DemandeFourniture, Integer> addFourniture_row_quantite;
+    public TableColumn<DemandeFourniture, String> addFourniture_row_raison;
+
+
+
 
     public void demandeCommande(){
 
@@ -134,11 +154,30 @@ public class DashboardController implements Initializable {
 
         connect = database.getConnexion();
 
+        Alert alert;
         try {
+            if(sp_id_stock.getValue().describeConstable().isEmpty()||sp_quantite.getValue().describeConstable().isEmpty()||tf_raison.getText().isEmpty()){
+                alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Erreur");
+                alert.setHeaderText(null);
+                alert.setContentText("Veuillez remplir tous les champs");
+                alert.showAndWait();
+
+
+            }
+
+            pst = connect.prepareStatement(sql);
+            pst.setInt(1, sp_idstock.getValue());
+            pst.setInt(2, sp_quantite.getValue());
+            pst.setString(3, tf_raison.getText());
+            pst.executeUpdate();
+
+
 
         }catch (Exception e){e.printStackTrace();
 
         }
+
 
     }
 
@@ -148,6 +187,7 @@ public class DashboardController implements Initializable {
 
         connect = database.getConnexion();
 
+        ResultSet rs = null;
         try {
             assert connect != null;
             pst = connect.prepareStatement(sql);
@@ -267,24 +307,10 @@ public class DashboardController implements Initializable {
         }
     }
 
-    public void logout(){
-        try{
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setTitle("Confirmation");
-            alert.setHeaderText(null);
-            alert.setContentText("Voulez vous vraiment vous deconnecter ?");
-            Optional<ButtonType> option = alert.showAndWait();
-
-            if (option.get() == ButtonType.OK){
-
-                Parent root = FXMLLoader.load(getClass().getResource("/appli/connexion.fxml"));
-                Stage stage = new Stage();
-                Scene scene = new Scene(root);
-            }
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+    public void logout(ActionEvent event){
+        stage = (Stage) Ap_mainMain.getScene().getWindow();
+        System.out.println("You successfully logged out!");
+        stage.close();
     }
 
     public void minimize() {
@@ -299,9 +325,102 @@ public class DashboardController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        SpinnerValueFactory<Integer> valueFactory =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
+        valueFactory.setValue(1);
+        sp_idstock.setValueFactory(valueFactory);
+
+        SpinnerValueFactory<Integer> valueFactory2 =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
+        valueFactory.setValue(1);
+        sp_quantite1.setValueFactory(valueFactory2);
+
+        SpinnerValueFactory<Integer> valueFactory3 =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
+        valueFactory.setValue(1);
+        sp_id.setValueFactory(valueFactory3);
+
+        SpinnerValueFactory<Integer> valueFactory4 =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
+        valueFactory.setValue(1);
+        sp_quantite_demande.setValueFactory(valueFactory4);
+
         ajouterStockVueListeAvecQuantite();
+        addDemandeFournitureShow();
     }
 
+    @FXML
+    protected void onDemanderButtonClick(){DemanderFourniture();}
+
+    private void DemanderFourniture(){
+        String sql = "INSERT INTO demandefourniture (article, quantite, raison) VALUES (?, ?, ?)";
+        try (Connection connection = new Database().getConnexion();
+             java.sql.PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setString(1, sp_article.getText());
+            statement.setInt(2, (Integer) sp_quantite_demande.getValue());
+            statement.setString(3, sp_raison.getText());
+
+            int rowsInserted = statement.executeUpdate();
+            if (rowsInserted > 0) {
+                System.out.println("Demande de fourniture ajouté avec succès !");
+            } else {
+                System.out.println("Échec de l'ajout.");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public ObservableList<DemandeFourniture> addDemandeFournitureData() {
+
+        ObservableList<DemandeFourniture> demandeFourniture = FXCollections.observableArrayList();
+
+        String sql = "SELECT * FROM demandefourniture";
+
+        connect = database.getConnexion();
+
+        try {
+            prepare = connect.prepareStatement(sql);
+            result = prepare.executeQuery();
+
+            while (result.next()) {
+                DemandeFourniture fourniture = new DemandeFourniture(
+                        result.getString("article"),
+                        result.getInt("quantite"),
+                        result.getString("raison")
+                );
+                                demandeFourniture.add(fourniture);
+            }
+              }catch(Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (result != null) result.close();
+                if (prepare != null) prepare.close();
+                if (connect != null) connect.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return demandeFourniture;
+    }
+
+    private ObservableList<DemandeFourniture> addDemandeFourniture;
+
+    public void addDemandeFournitureShow() {
+        addDemandeFourniture = addDemandeFournitureData();
+
+        addFourniture_row_id.setCellValueFactory(new PropertyValueFactory<>("idDemandeFourniture"));
+        addFourniture_row_article.setCellValueFactory(new PropertyValueFactory<>("article"));
+        addFourniture_row_quantite.setCellValueFactory(new PropertyValueFactory<>("quantite"));
+        addFourniture_row_raison.setCellValueFactory(new PropertyValueFactory<>("raison"));
+
+        addFourniture_tableView.setItems(null);
+        addFourniture_tableView.layout();
+        addFourniture_tableView.setItems(addDemandeFourniture);
+    }
 
 }
-

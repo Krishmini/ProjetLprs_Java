@@ -1,36 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EspaceProfesseurController">
+<AnchorPane fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EspaceProfesseur">
     <children>
-        <AnchorPane prefHeight="410.0" prefWidth="235.0" style="-fx-background-color: #FFFFFF;">
-            <children>
-                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@50-Lycee-Robert-Schuman.jpg" />
-                    </image>
-                </ImageView>
-                <Label layoutX="44.0" layoutY="253.0" text="Bienvenue sur &#10;votre espace !">
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                </Label>
-            </children>
-        </AnchorPane>
-        <AnchorPane prefHeight="428.0" prefWidth="367.0" style="-fx-background-color: #00008B;">
-            <children>
-                <ButtonBar layoutX="48.0" layoutY="53.0" prefHeight="40.0" prefWidth="200.0" />
-                <Button fx:id="btnVueDossier" layoutX="102.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleVueDossier" prefHeight="40.0" prefWidth="176.0" text="Dossier d'inscription" />
-                <Button fx:id="btnRDV" layoutX="102.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleRDV" prefHeight="40.0" prefWidth="176.0" text="Organiser des rendez-vous" />
-            <Button fx:id="btnDemandeFourniture" layoutX="102.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleDemandeFourniture" prefHeight="40.0" prefWidth="176.0" text="Demande de fourniture" />
-            </children></AnchorPane>
+        <BorderPane prefHeight="500.0" prefWidth="800.0">
+            <left>
+                <AnchorPane prefHeight="522.0" prefWidth="179.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" BorderPane.alignment="CENTER">
+                    <children>
+                        <FontAwesomeIconView glyphName="USER" layoutX="64.0" layoutY="161.0" size="120" text="" />
+                        <Line endX="100.0" layoutX="107.0" layoutY="207.0" startX="-100.0" stroke="WHITE" />
+                        <Button fx:id="accueil" layoutX="25.0" layoutY="216.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" text="Accueil" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="dossierInscription" layoutX="24.0" layoutY="246.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" text="Dossier d'inscription" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="rdv" layoutX="14.0" layoutY="276.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" text="Organiser des rendez-vous" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="14.0" layoutY="266.0" size="16" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="9.0" layoutY="297.0" size="16" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="15.0" layoutY="236.0" size="16" text="" />
+                        <Label fx:id="logout" layoutX="57.0" layoutY="463.0" text="Déconnexion" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="logoutButton" layoutX="15.0" layoutY="454.0" mnemonicParsing="false" onAction="#logout1" style="-fx-background-color: transparent;">
+                            <graphic>
+                                <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="30" />
+                            </graphic></Button>
+                        <Button fx:id="supprimerr" layoutX="18.0" layoutY="362.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="26.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="Supprimer son compte !" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="modifierr" layoutX="18.0" layoutY="333.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="34.0" prefWidth="173.0" style="-fx-background-color: transparent;" text="Modifier son compte !" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="14.0" layoutY="356.0" size="16" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="14.0" layoutY="384.0" size="16" />
+                        <Button fx:id="demandeFourniture" layoutX="14.0" layoutY="306.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" text="Demande de fourniture" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="9.0" layoutY="327.0" size="16" />
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane fx:id="ac" prefHeight="521.0" prefWidth="590.0" style="-fx-background-color: white;" visible="false">
+                            <children>
+                                <Label layoutX="103.0" layoutY="232.0" text="Bienvenue sur votre espace !">
+                                    <font>
+                                        <Font size="30.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="di" prefHeight="522.0" prefWidth="590.0" style="-fx-background-color: white;" visible="false">
+                            <children>
+                                <TableView fx:id="addDossier_tableView" layoutX="14.0" layoutY="14.0" prefHeight="490.0" prefWidth="565.0">
+                                    <columns>
+                                        <TableColumn fx:id="addDossier_row_id_dossierInscription" prefWidth="49.59991645812988" text="id_dossierInscription" />
+                                        <TableColumn fx:id="addDossier_row_nomm" prefWidth="100.80004119873047" text="Nomm" />
+                                        <TableColumn fx:id="addDossier_row_prenomm" prefWidth="75.0" text="Prenomm" />
+                                        <TableColumn fx:id="addDossier_row_date" prefWidth="75.0" text="Date" />
+                                        <TableColumn fx:id="addDossier_row_heure" prefWidth="77.5999755859375" text="Heure" />
+                                        <TableColumn fx:id="addDossier_row_filiere_interet" prefWidth="90.4000244140625" text="Filière_intérêt" />
+                                        <TableColumn fx:id="addDossier_row_motivation_etudiant" prefWidth="173.60000610351562" text="Motivation_étudiant" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="rv" prefHeight="521.0" prefWidth="590.0" style="-fx-background-color: white;" visible="false">
+                            <children>
+                                <Text layoutX="154.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salle :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="31.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <Button fx:id="creer" layoutX="209.0" layoutY="181.0" mnemonicParsing="false" onAction="#onValiderButtonClick" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Créer" />
+                                <Text layoutX="186.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Créer un rendez-vous !">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="285.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heure :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="heure1" layoutX="352.0" layoutY="111.0" prefHeight="24.0" prefWidth="150.0" />
+
+
+                                <TableView fx:id="addRDV_tableView" layoutX="2.0" layoutY="214.0" prefHeight="295.0" prefWidth="586.0">
+                                    <columns>
+                                        <TableColumn fx:id="addRDV_row_salle" prefWidth="135.99999380111694" text="Salle" />
+                                        <TableColumn fx:id="addRDV_row_date" prefWidth="139.199951171875" text="Date" />
+                                        <TableColumn fx:id="addRDV_row_heure" prefWidth="158.4000244140625" text="Heure" />
+                                        <TableColumn fx:id="addRDV_row_ref_dossierInscription" prefWidth="155.19998168945312" text="ref_dossierInscription" />
+                                    </columns>
+
+
+                                </TableView>
+                                <DatePicker fx:id="date" layoutX="89.0" layoutY="112.0" />
+                                <RadioButton fx:id="Salle1" layoutX="215.0" layoutY="72.0" mnemonicParsing="false" text="Salle 1" />
+                                <RadioButton fx:id="Salle2" layoutX="294.0" layoutY="72.0" mnemonicParsing="false" text="Salle 2" />
+                                <RadioButton fx:id="Salle3" layoutX="371.0" layoutY="70.0" mnemonicParsing="false" text="Salle 3" />
+                                <Text layoutX="116.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ref_dossierInscription :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="ref" layoutX="303.0" layoutY="148.0" prefHeight="24.0" prefWidth="150.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="df" prefHeight="521.0" prefWidth="590.0" style="-fx-background-color: white;">
+                            <children>
+                                <Text layoutX="155.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Demande de fourniture !">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Text>
+                        <TableView fx:id="addFourniture_tableView" layoutX="7.0" layoutY="259.0" prefHeight="246.0" prefWidth="574.0">
+                           <columns>
+                              <TableColumn fx:id="addFourniture_row_article" prefWidth="231.9999327659607" text="article" />
+                              <TableColumn fx:id="addFourniture_row_quantite" minWidth="0.0" prefWidth="81.60003662109375" text="quantite" />
+                              <TableColumn fx:id="addFourniture_row_raison" prefWidth="261.6000671386719" text="raison" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="291.0" layoutY="69.0" text="Quantité :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="sp_quantite_demande" layoutX="383.0" layoutY="70.0" />
+                        <Label layoutX="151.0" layoutY="138.0" text="Raison :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="sp_raison" layoutX="220.0" layoutY="120.0" prefHeight="64.0" prefWidth="150.0" />
+                        <Button fx:id="bt_envoyer" layoutX="216.0" layoutY="213.0" mnemonicParsing="false" onAction="#onDemanderButtonClick" prefHeight="26.0" prefWidth="149.0" text="Envoyer" />
+                        <TextField fx:id="sp_article" layoutX="121.0" layoutY="70.0" prefHeight="26.0" prefWidth="150.0" />
+                        <Label layoutX="52.0" layoutY="69.0" text="Article :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="mo" nodeOrientation="LEFT_TO_RIGHT" prefHeight="521.0" prefWidth="590.0" style="-fx-background-color: white;" visible="false">
+                            <children>
+                                <Text layoutX="198.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="175.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <Button fx:id="modifier" layoutX="211.0" layoutY="398.0" mnemonicParsing="false" onAction="#onModifierButtonClick" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Modifier" />
+                                <Text layoutX="160.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier votre compte !">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="193.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email : ">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="128.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="144.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email actuel :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="emailActuel" layoutX="262.0" layoutY="135.0" prefHeight="24.0" prefWidth="150.0" />
+
+                                <TextField fx:id="mdp" layoutX="262.0" layoutY="353.0" prefHeight="24.0" prefWidth="150.0" />
+                                <TextField fx:id="email" layoutX="262.0" layoutY="296.0" prefHeight="24.0" prefWidth="150.0" />
+                                <TextField fx:id="prenom1" layoutX="262.0" layoutY="239.0" prefHeight="24.0" prefWidth="150.0" />
+                                <TextField fx:id="nom1" layoutX="262.0" layoutY="187.0" prefHeight="24.0" prefWidth="150.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="sup" nodeOrientation="LEFT_TO_RIGHT" prefHeight="521.0" prefWidth="590.0" style="-fx-background-color: white;" visible="false">
+                            <children>
+                                <Text layoutX="144.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email actuel :">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="emailActuel1" layoutX="262.0" layoutY="135.0" prefHeight="24.0" prefWidth="150.0" />
+                                <Button fx:id="supprimer" layoutX="211.0" layoutY="247.0" mnemonicParsing="false" onAction="#onSupprimerButtonClick" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Supprimer" />
+                                <Text layoutX="149.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supprimer votre compte !">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
     </children>
-</HBox>
+</AnchorPane>
