@@ -19,4 +19,5 @@ module com.example.lprsjava {
     exports appli;
     exports controller;
     opens controller to javafx.fxml;
+
 }

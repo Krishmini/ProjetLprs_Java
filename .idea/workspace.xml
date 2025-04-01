@@ -5,65 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="-">
-      <change afterPath="$PROJECT_DIR$/Documentations/Documentation technique et fonctionnelle.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/Inscription.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SessionUtilisateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DemandeFournitureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DossierInscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaireController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseurController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaireController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/FicheEtudiantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoggedInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrganiserRDVController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/VueDossierInscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/connexionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/deconnexionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/editerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/inscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/supprimerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/DossierInscription-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/connexion.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/signup.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/supprimer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DBUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DemandeFournitureController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DossierInscriptionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EspaceGestionnaireController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EspaceProfesseurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EspaceSecretaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/FicheEtudiantController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoggedInController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/OrganiserRDVController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SignUpController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/connexionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/deconnexionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/editerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/inscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/supprimerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/DemandeFourniture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/DemandeFourniture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/DossierInscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/DossierInscription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/FicheEtudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/FicheEtudiant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/RendezVous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/RendezVous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/DemandeFournitureApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/DossierInscriptionApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/EspaceGestionnaireApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/EspaceProfesseurApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/EspaceSecretaireApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/EspaceSecretaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/FicheEtudiantApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/OrganiserRDVApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/VueDossierInscriptionApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/deconnexionApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/editerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/EspaceGestionnaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/inscriptionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/supprimerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/EspaceProfesseur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InscriptionController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/DemandeFourniture.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/DossierInscription-view.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceGestionnaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceGestionnaire.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceProfesseur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceProfesseur.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/connexion.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/signup.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/supprimer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/Inscription.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/Inscription.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +73,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -99,33 +93,35 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.connexionApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloApplication.executor": "Run",
+    "Application.InscriptionApplication.executor": "Run",
+    "Application.connexionApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/wamp64/www/test/ProjetLprs_Java/src/main/java/controller",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="appli" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\test\ProjetLprs_Java\src\main\java\controller" />
+      <recent name="C:\wamp64\www\test\ProjetLprs_Java\src\main\resources\appli" />
       <recent name="C:\Lprs-java\src\main\resources\appli" />
       <recent name="C:\Lprs-java\src\main\java\Model" />
       <recent name="C:\Lprs-java\src\main\java\Controller" />
-      <recent name="C:\Lprs-java\src\main\java\appli" />
-      <recent name="C:\Lprs-java\Documentations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\krimi\IdeaProjects\Lprs-java\src\main\resources\appli" />
@@ -135,8 +131,39 @@
       <recent name="appli" />
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="appli" />
+      <recent name="Model" />
+      <recent name="controller" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.connexionApplication">
+    <configuration name="InscriptionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="appli.InscriptionApplication" />
+      <module name="TodoListJX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="connexionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="appli.connexionApplication" />
+      <module name="TodoListJX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Lprs-java" />
       <method v="2">
@@ -150,6 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.connexionApplication" />
+        <item itemvalue="Application.InscriptionApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -215,6 +248,7 @@
       <workItem from="1741940401279" duration="1157000" />
       <workItem from="1742555203188" duration="103000" />
       <workItem from="1742758969303" duration="3974000" />
+      <workItem from="1743530439520" duration="2416000" />
     </task>
     <task id="LOCAL-00001" summary="Gestion de stock, vue et OnClick">
       <option name="closed" value="true" />
@@ -256,5 +290,21 @@
     <MESSAGE value="Gestion de stock, vue et OnClick" />
     <MESSAGE value="-" />
     <option name="LAST_COMMIT_MESSAGE" value="-" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appli/connexionApplication.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
