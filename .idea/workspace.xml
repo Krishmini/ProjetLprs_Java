@@ -5,52 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="-">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SessionUtilisateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DBUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DemandeFournitureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DossierInscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaireController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseurController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaireController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/FicheEtudiantController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoggedInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrganiserRDVController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/VueDossierInscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/connexionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/deconnexionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/editerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/inscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/supprimerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/DossierInscription-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/connexion.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/signup.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/supprimer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer_gestionnaire.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer_professeur.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer_secretaire.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/supprimer_gestionnaire.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/supprimer_professeur.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/supprimer_secretaire.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InscriptionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DossierInscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaireController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaireController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/FicheEtudiantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FicheEtudiantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrganiserRDVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OrganiserRDVController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/VueDossierInscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/VueDossierInscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/connexionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/connexionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/editerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/editerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/inscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/inscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/supprimerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/supprimerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/DossierInscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/DossierInscription-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceGestionnaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceGestionnaire.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceProfesseur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceProfesseur.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/Inscription.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/Inscription.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/connexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/connexion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/supprimer.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +48,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -72,13 +59,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/Controller/VueDossierInscriptionController.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -103,7 +83,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/wamp64/www/test/ProjetLprs_Java/src/main/java/controller",
+    "last_opened_file_path": "C:/ProjetLprs_Javaa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,7 +117,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.connexionApplication">
+  <component name="RunManager" selected="Application.InscriptionApplication">
     <configuration name="InscriptionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="appli.InscriptionApplication" />
       <module name="TodoListJX" />
@@ -179,8 +159,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.connexionApplication" />
         <item itemvalue="Application.InscriptionApplication" />
+        <item itemvalue="Application.connexionApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -249,6 +229,7 @@
       <workItem from="1742555203188" duration="103000" />
       <workItem from="1742758969303" duration="3974000" />
       <workItem from="1743530439520" duration="2416000" />
+      <workItem from="1743585217240" duration="29756000" />
     </task>
     <task id="LOCAL-00001" summary="Gestion de stock, vue et OnClick">
       <option name="closed" value="true" />
@@ -290,21 +271,5 @@
     <MESSAGE value="Gestion de stock, vue et OnClick" />
     <MESSAGE value="-" />
     <option name="LAST_COMMIT_MESSAGE" value="-" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/appli/connexionApplication.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
