@@ -104,7 +104,7 @@ public class editerController {
         stage.show();
     }
     public void handleRetour2(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/EspaceSecretaire.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/EspaceGestionnaire.fxml"));
         Parent root = loader.load();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

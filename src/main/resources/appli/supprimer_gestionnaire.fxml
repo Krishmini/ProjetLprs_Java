@@ -27,6 +27,11 @@
                         </Label>
                     </graphic>
                 </Button>
+            <Button fx:id="btnRetour" layoutX="25.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleRetour2" text="Retour">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
         <AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: white;">

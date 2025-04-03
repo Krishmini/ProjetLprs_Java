@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<HBox fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.editerController">
+<HBox fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.editerController">
     <children>
         <AnchorPane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );">
             <children>
@@ -29,6 +32,11 @@
                         </Label>
                     </graphic>
                 </Button>
+            <Button fx:id="btnRetour" layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleRetour2" text="Retour">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
         <AnchorPane prefHeight="500.0" prefWidth="590.0" style="-fx-background-color: white;">
