@@ -5,52 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="-">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SessionUtilisateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/connexionApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DBUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DemandeFournitureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DossierInscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaireController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseurController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaireController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/FicheEtudiantController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoggedInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrganiserRDVController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/VueDossierInscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/connexionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/deconnexionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/editerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/inscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/supprimerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/DossierInscription-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/FicheEtudiant-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/OrganiserRDV.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/VueDossierInscription-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/connexion.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/deconnexion.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/editer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/inscription-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/signup.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/supprimer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/InscriptionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceProfesseur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceSecretaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InscriptionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceGestionnaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceGestionnaire.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceProfesseur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceProfesseur.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/EspaceSecretaire.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/Inscription.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/Inscription.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,25 +48,25 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.HelloApplication.executor": "Run",
-    "Application.InscriptionApplication.executor": "Run",
-    "Application.connexionApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/wamp64/www/test/ProjetLprs_Java/src/main/java/controller",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InscriptionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.connexionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/test/ProjetLprs_Java/src/main/java/controller&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="appli" />
@@ -248,7 +203,8 @@
       <workItem from="1741940401279" duration="1157000" />
       <workItem from="1742555203188" duration="103000" />
       <workItem from="1742758969303" duration="3974000" />
-      <workItem from="1743530439520" duration="2416000" />
+      <workItem from="1743530439520" duration="4530000" />
+      <workItem from="1743854094276" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="Gestion de stock, vue et OnClick">
       <option name="closed" value="true" />
