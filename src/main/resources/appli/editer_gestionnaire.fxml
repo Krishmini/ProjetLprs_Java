@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.editerController">
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );">
+            <children>
+                <FontAwesomeIconView fill="WHITE" layoutX="70.0" layoutY="205.0" size="120" text="" wrappingWidth="90.39999999999998" />
+                <Line endX="100.0" layoutX="115.0" layoutY="234.0" startX="-100.0" stroke="WHITE" />
+                <Label layoutX="37.0" layoutY="279.0" text="Modifier &#10;votre compte !" textAlignment="CENTER" textFill="#fafafa">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="logoutButton" layoutX="1.0" layoutY="455.0" mnemonicParsing="false" onAction="#logout1" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: none;">
+                    <graphic>
+                        <Label fx:id="logout" text="Déconnexion" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <graphic>
+                                <FontAwesomeIconView fill="WHITE" size="30" text="" />
+                            </graphic>
+                        </Label>
+                    </graphic>
+                </Button>
+            <Button fx:id="btnRetour" layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleRetour2" text="Retour">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="500.0" prefWidth="590.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutX="171.0" layoutY="188.0" text="Prenom :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="193.0" layoutY="131.0" text="Nom :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="192.0" layoutY="236.0" prefHeight="42.0" prefWidth="139.0" text="Email :" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="128.0" layoutY="296.0" text="Mot de passe :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="email" layoutX="255.0" layoutY="241.0" prefHeight="32.0" prefWidth="156.0" />
+                <TextField fx:id="mdp" layoutX="257.0" layoutY="302.0" prefHeight="32.0" prefWidth="156.0" />
+                <TextField fx:id="nom1" layoutX="256.0" layoutY="126.0" prefHeight="32.0" prefWidth="156.0" />
+                <TextField fx:id="prenom1" layoutX="257.0" layoutY="183.0" prefHeight="32.0" prefWidth="156.0" />
+                <Button fx:id="modifier" layoutX="204.0" layoutY="410.0" mnemonicParsing="false" onAction="#onModifierButtonClick" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Modifier" />
+                <Label layoutX="138.0" layoutY="74.0" text="Email actuel :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="emailActuel" layoutX="256.0" layoutY="69.0" prefHeight="32.0" prefWidth="156.0" />
+            </children></AnchorPane>
+    </children>
+</HBox>

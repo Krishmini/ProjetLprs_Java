@@ -1,25 +1,29 @@
 package controller;
 
 import database.Database;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.Connection;
 
 public class supprimerController {
+    
+    @FXML
+    public Button supprimer;
+    public TextField emailActuel1;
+    public HBox Main;
+    public Button btnRetour;
+    private Stage stage;
 
-    @FXML
-    public TextField nomField;
-    @FXML
-    public TextField prenomField;
-    @FXML
-    public TextField mailField;
-    @FXML
-    public TextField mdpField;
-
-    @FXML
-    public Button editer;
     @FXML
     public void initialize() {
         try {
@@ -31,23 +35,65 @@ public class supprimerController {
         }
     }
     @FXML
-    protected void onSupprimerButtonClick() {supprimerEtudiant();
+    protected void onSupprimerButtonClick(ActionEvent event) {
+        supprimerCompte();
     }
-    private void supprimerEtudiant() {
+    private void supprimerCompte() {
+        String emailUtilisateur = emailActuel1.getText();
 
-        String sql = "DELETE FROM `utilisateur` WHERE id_utilisateur=id_utilisateur;";
+
+        String sql = "DELETE FROM `utilisateur` WHERE mail = ?;";
         try (Connection connection = new Database().getConnexion();
              java.sql.PreparedStatement statement = connection.prepareStatement(sql)) {
 
-            int rowsUpdated = statement.executeUpdate();
-            if (rowsUpdated > 0) {
-                System.out.println("Étudiant supprimé avec succès !");
+            statement.setString(1, emailUtilisateur);
+
+
+            int rowsDeleted = statement.executeUpdate();
+            if (rowsDeleted > 0) {
+                Stage stage = (Stage) Main.getScene().getWindow();
+                System.out.println("Étudiant supprimé avec succès");
+                stage.close();
             } else {
                 System.out.println("Échec.");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    public void logout1(ActionEvent event){
+        stage = (Stage) Main.getScene().getWindow();
+        System.out.println("You successfully logged out!");
+        stage.close();
+    }
 
+    public void handleRetour(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/EspaceSecretaire.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void handleRetour1(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/EspaceProfesseur.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void handleRetour2(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/EspaceGestionnaire.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

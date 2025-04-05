@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EspaceProfesseurController">
+<HBox fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EspaceProfesseurController">
     <children>
-        <AnchorPane prefHeight="410.0" prefWidth="235.0" style="-fx-background-color: #FFFFFF;">
+        <AnchorPane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );">
             <children>
-                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@50-Lycee-Robert-Schuman.jpg" />
-                    </image>
-                </ImageView>
-                <Label layoutX="44.0" layoutY="253.0" text="Bienvenue sur &#10;votre espace !">
+                <Label layoutX="51.0" layoutY="272.0" text="Bienvenue sur &#10;votre espace !" textFill="#f7f7f7">
                     <font>
                         <Font size="24.0" />
                     </font>
                 </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="79.0" layoutY="215.0" size="120" />
+            <Line endX="100.0" layoutX="125.0" layoutY="239.0" startX="-100.0" stroke="WHITE" />
+            <Button fx:id="logoutButton" layoutX="25.0" layoutY="447.0" mnemonicParsing="false" onAction="#logout1" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: none;">
+               <graphic>
+                  <Label fx:id="logout" text="Déconnexion" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="30" />
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
             </children>
         </AnchorPane>
-        <AnchorPane prefHeight="428.0" prefWidth="367.0" style="-fx-background-color: #00008B;">
+        <AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color:white;">
             <children>
-                <ButtonBar layoutX="48.0" layoutY="53.0" prefHeight="40.0" prefWidth="200.0" />
-                <Button fx:id="btnVueDossier" layoutX="102.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleVueDossier" prefHeight="40.0" prefWidth="176.0" text="Dossier d'inscription" />
-                <Button fx:id="btnRDV" layoutX="102.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleRDV" prefHeight="40.0" prefWidth="176.0" text="Organiser des rendez-vous" />
-            <Button fx:id="btnDemandeFourniture" layoutX="102.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleDemandeFourniture" prefHeight="40.0" prefWidth="176.0" text="Demande de fourniture" />
+                <Button fx:id="btnVueDossier" layoutX="112.0" layoutY="144.0" mnemonicParsing="false" onAction="#handleVueDossier" prefHeight="40.0" prefWidth="326.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Dossier d'inscription !" />
+                <Button fx:id="btnRDV" layoutX="112.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleRDV" prefHeight="40.0" prefWidth="326.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Organiser des rendez-vous !" />
+            <Button fx:id="btnDemandeFourniture" layoutX="112.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleDemandeFourniture" prefHeight="40.0" prefWidth="326.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Demander des fournitures !" />
+            <Button fx:id="editer" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#editer" prefHeight="40.0" prefWidth="238.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Modifier votre compte !" />
+            <Button fx:id="supprimer" layoutX="312.0" layoutY="446.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="40.0" prefWidth="224.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Supprimer votre compte !" />
+            <FontAwesomeIconView glyphName="FOLDER_OPEN" layoutX="174.0" layoutY="174.0" size="30" />
+            <FontAwesomeIconView glyphName="CALENDAR" layoutX="165.0" layoutY="260.0" size="30" />
+            <FontAwesomeIconView glyphName="ARCHIVE" layoutX="166.0" layoutY="346.0" size="30" />
             </children></AnchorPane>
     </children>
 </HBox>

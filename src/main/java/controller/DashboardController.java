@@ -9,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
@@ -17,6 +18,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.HashMap;
@@ -26,6 +28,7 @@ import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
 
+    public AnchorPane Main;
     @FXML
     private AnchorPane Ap_DmPr;
 
@@ -146,6 +149,7 @@ public class DashboardController implements Initializable {
     private ResultSet rs;
     private Label myLabel;
     int currentValue;
+    private Stage stage;
 
     private void barreDeRecherche() {
         ObservableList<StockQuantite> stockList = ajouterStockListeAvecQuantite();
@@ -396,27 +400,7 @@ public class DashboardController implements Initializable {
         }
     }
 
-    public void logout(){
-        try{
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setTitle("Confirmation");
-            alert.setHeaderText(null);
-            alert.setContentText("Voulez vous vraiment vous deconnecter ?");
-            Optional<ButtonType> option = alert.showAndWait();
 
-            if (option.isPresent() && option.get() == ButtonType.OK){
-
-                Parent root = FXMLLoader.load(getClass().getResource("/appli/connexion.fxml"));
-                Stage stage = new Stage();
-                Scene scene = new Scene(root);
-                stage.setScene(scene);
-                stage.show();
-            }
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
 
     public void minimize() {
         Stage stage = (Stage) Ap_mainMain.getScene().getWindow();
@@ -447,6 +431,20 @@ public class DashboardController implements Initializable {
 
         ajouterStockVueListeAvecQuantite();
     }
+    public void logout1(ActionEvent event){
+        stage = (Stage) Main.getScene().getWindow();
+        System.out.println("You successfully logged out!");
+        stage.close();
+    }
 
+    public void handleRetour(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/EspaceGestionnaire.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
 

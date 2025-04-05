@@ -18,7 +18,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Ap_mainMain" prefHeight="484.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+<AnchorPane fx:id="Main" prefHeight="484.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
 
    <children>
       <BorderPane layoutX="-3.0" layoutY="-21.0" prefHeight="421.0" prefWidth="606.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.19999999999998863" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-2.6000000000000227" AnchorPane.topAnchor="-21.0">
@@ -69,7 +69,7 @@
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="bt_logout" layoutX="12.0" layoutY="406.0" mnemonicParsing="false" onAction="#logout" prefHeight="20.0" prefWidth="56.0" style="-fx-background-color: #00ACC1;">
+                        <Button fx:id="logoutButton" layoutX="12.0" layoutY="406.0" mnemonicParsing="false" onAction="#logout1" prefHeight="20.0" prefWidth="56.0" style="-fx-background-color: #00ACC1;">
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="1.5em" text="" textAlignment="CENTER" wrappingWidth="39.88572120666504" />
                            </graphic>
@@ -91,6 +91,7 @@
                               <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="1.2em" />
                            </graphic>
                         </Button>
+                        <Button fx:id="btnRetour" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleRetour" text="Retour" />
                      </children>
                   </AnchorPane>
                </children>
@@ -248,7 +249,7 @@
                      <children>
                         <AnchorPane layoutY="14.0" prefHeight="439.0" prefWidth="404.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
                            <children>
-                              <TableView fx:id="tb_stock1" layoutX="2.0" layoutY="73.0" prefHeight="362.0" prefWidth="398.0" onSort="#ajouterStockVueListeAvecQuantite">
+                              <TableView fx:id="tb_stock1" layoutX="2.0" layoutY="73.0" onSort="#ajouterStockVueListeAvecQuantite" prefHeight="362.0" prefWidth="398.0">
                                  <columns>
                                     <TableColumn fx:id="row_id_stock" prefWidth="37.5999755859375" text="id" />
                                     <TableColumn fx:id="row_libelle" prefWidth="83.20004272460938" text="libelle" />

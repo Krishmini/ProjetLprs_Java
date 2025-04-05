@@ -1,87 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FicheEtudiantController">
+<HBox fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FicheEtudiantController">
    <children>
-      <AnchorPane prefHeight="410.0" prefWidth="235.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );">
          <children>
-            <Label layoutX="64.0" layoutY="254.0" text="Créer une">
+            <Label layoutX="69.0" layoutY="272.0" text="Créer une" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="40.0" layoutY="287.0" text="fiche étudiant !">
+            <Label layoutX="45.0" layoutY="305.0" text="fiche étudiant !" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@50-Lycee-Robert-Schuman.jpg" />
-               </image>
-            </ImageView>
-            <Button fx:id="btnRetour" layoutX="94.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleRetour" text="Retour" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="82.0" layoutY="202.0" size="120" />
+            <Line endX="100.0" layoutX="125.0" layoutY="236.0" startX="-100.0" stroke="WHITE" />
+            <Button fx:id="logoutButton" layoutX="28.0" layoutY="450.0" mnemonicParsing="false" onAction="#logout1" prefHeight="26.0" prefWidth="129.0" style="-fx-background-color: none;">
+               <graphic>
+                  <Label fx:id="logout" text="Déconnexion" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="30" />
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="btnRetour" layoutX="15.0" layoutY="28.0" mnemonicParsing="false" onAction="#handleRetour" text="Retour">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="428.0" prefWidth="367.0" style="-fx-background-color: #00008B;">
+      <AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: white;">
          <children>
-            <Label layoutX="24.0" layoutY="11.0" text="Nom :" textFill="#fffdfd" underline="true">
+            <Label layoutX="63.0" layoutY="18.0" text="Nom :">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="24.0" layoutY="57.0" text="Prénom :" textFill="#fffdfd" underline="true">
+            <Label layoutX="282.0" layoutY="18.0" text="Prénom :">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="24.0" layoutY="103.0" text="Diplôme :" textFill="#fffdfd" underline="true">
+            <Label layoutX="35.0" layoutY="59.0" text="Diplôme :">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="24.0" layoutY="149.0" text="Email :" textFill="#fffdfd" underline="true">
+            <Label layoutX="301.0" layoutY="59.0" text="Email :">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="24.0" layoutY="195.0" text="Téléphone :" textFill="#fffdfd" underline="true">
+            <Label layoutX="25.0" layoutY="99.0" text="Téléphone :">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="24.0" layoutY="241.0" text="Ville :" textFill="#fffdfd" underline="true">
+            <Label layoutX="309.0" layoutY="99.0" text="Ville :">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="24.0" layoutY="287.0" text="Cp :" textFill="#fffdfd" underline="true">
+            <Label layoutX="87.0" layoutY="140.0" text="Cp :">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="24.0" layoutY="333.0" text="Rue :" textFill="#fffdfd" underline="true">
+            <Label layoutX="313.0" layoutY="140.0" text="Rue :">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="nom_eField" layoutX="116.0" layoutY="7.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="prenom_eField" layoutX="116.0" layoutY="53.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="dernier_diplomeField" layoutX="116.0" layoutY="99.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="email_eField" layoutX="116.0" layoutY="145.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="telephone_eField" layoutX="116.0" layoutY="191.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="ville_eField" layoutX="116.0" layoutY="237.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="cp_eField" layoutX="116.0" layoutY="283.0" prefHeight="24.0" prefWidth="213.0" />
-            <TextField fx:id="rue_eField" layoutX="116.0" layoutY="329.0" prefHeight="24.0" prefWidth="213.0" />
-            <Button layoutX="156.0" layoutY="364.0" mnemonicParsing="false" onAction="#onCreerButtonClick" text="Créer" />
+            <TextField fx:id="nom_e" layoutX="124.0" layoutY="19.0" prefHeight="24.0" prefWidth="148.0" />
+            <TextField fx:id="prenom_e" layoutX="364.0" layoutY="19.0" prefHeight="24.0" prefWidth="148.0" />
+            <TextField fx:id="dernier_diplome" layoutX="124.0" layoutY="60.0" prefHeight="24.0" prefWidth="148.0" />
+            <TextField fx:id="email_e" layoutX="364.0" layoutY="60.0" prefHeight="24.0" prefWidth="148.0" />
+            <TextField fx:id="telephone_e" layoutX="124.0" layoutY="100.0" prefHeight="24.0" prefWidth="148.0" />
+            <TextField fx:id="ville_e" layoutX="364.0" layoutY="100.0" prefHeight="24.0" prefWidth="148.0" />
+            <TextField fx:id="cp_e" layoutX="124.0" layoutY="141.0" prefHeight="24.0" prefWidth="148.0" />
+            <TextField fx:id="rue_e" layoutX="364.0" layoutY="141.0" prefHeight="24.0" prefWidth="148.0" />
+            <Button fx:id="creer" layoutX="196.0" layoutY="181.0" mnemonicParsing="false" onAction="#onCreerButtonClick" prefHeight="30.0" prefWidth="172.0" style="-fx-background-color: linear-gradient(to bottom right, #18FFFF, #00838F );" text="Créer" />
+            <TableView fx:id="addEtudiant_tableView" layoutX="5.0" layoutY="222.0" prefHeight="271.0" prefWidth="537.0">
+              <columns>
+                <TableColumn fx:id="addEtudiant_row_nom_e" prefWidth="66.39996194839478" text="Nom" />
+                <TableColumn fx:id="addEtudiant_row_prenom_e" prefWidth="70.39997100830078" text="Prénom" />
+                  <TableColumn fx:id="addEtudiant_row_diplome" prefWidth="75.199951171875" text="Diplôme" />
+                  <TableColumn fx:id="addEtudiant_row_email_e" prefWidth="74.39996337890625" text="Email" />
+                  <TableColumn fx:id="addEtudiant_row_telephone_e" prefWidth="73.5999755859375" text="Téléphone" />
+                  <TableColumn fx:id="addEtudiant_row_ville_e" prefWidth="63.199951171875" text="Ville" />
+                  <TableColumn fx:id="addEtudiant_row_cp_e" prefWidth="47.199951171875" text="Cp" />
+                  <TableColumn fx:id="addEtudiant_row_rue_e" prefWidth="66.39995727539065" text="Rue" />
+              </columns>
+            </TableView>
          </children>
       </AnchorPane>
    </children>
