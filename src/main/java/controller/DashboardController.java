@@ -105,6 +105,10 @@ public class DashboardController implements Initializable {
     private Spinner<Integer> sp_quantite2;
 
     @FXML
+    private Spinner<Integer> sp_quantite11;
+
+
+    @FXML
     private Spinner<Integer> sp_quantite;
 
     @FXML
@@ -130,6 +134,8 @@ public class DashboardController implements Initializable {
 
     @FXML
     private TextField tf_raison;
+    @FXML
+    private TextField tf_raison1;
 
     @FXML
     private TextField tf_article;
@@ -157,6 +163,7 @@ public class DashboardController implements Initializable {
     int currentValue;
     private Stage stage;
 
+    @FXML
     private void barreDeRecherche() {
         ObservableList<StockQuantite> stockList = ajouterStockListeAvecQuantite();
         FilteredList<StockQuantite> filteredData = new FilteredList<>(stockList, p -> true);
@@ -224,6 +231,45 @@ public class DashboardController implements Initializable {
             showAlert("Erreur", "Problème lors de l'insertion dans la base de données : " + e.getMessage());
         }
     }
+    @FXML
+    private void demandeCommande2(ActionEvent event) {
+
+        String article = tf_article.getText();
+        int quantite = sp_quantite11.getValue();
+        String raison = tf_raison1.getText();
+        int utilisateurId = Model.SessionUtilisateur.getUtilisateurId();
+
+        System.out.println("ID utilisateur courant : " + utilisateurId);
+
+        if (raison.isEmpty()) {
+            showAlert("Erreur", "Veuillez entrer une raison.");
+            return;
+        }
+
+
+        String sql = "INSERT INTO demandeFourniture (article, quantite, raison, approuver, ref_stock, ref_utilisateur) VALUES (?, ?, ?, NULL, NULL, ?)";
+
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setString(1, article);
+            statement.setInt(2, quantite);
+            statement.setString(3, raison);
+            statement.setInt(4, utilisateurId);
+
+
+            int rowsInserted = statement.executeUpdate();
+            if (rowsInserted > 0) {
+                showAlert("Succès", "Demande envoyée avec succès !");
+                tf_raison1.clear();
+            } else {
+                showAlert("Erreur", "Échec de la demande. Veuillez réessayer.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            showAlert("Erreur", "Problème lors de l'insertion dans la base de données : " + e.getMessage());
+        }
+    }
+
     @FXML
     private void UseStock(ActionEvent event) {
 
@@ -379,8 +425,11 @@ public class DashboardController implements Initializable {
         return stockQuantiteListe;
     }
 
+
     public void ajouterStockVueListeAvecQuantite2() {
+
         ObservableList<StockQuantite> stockQuantiteListe = ajouterStockListeAvecQuantite();
+
 
         row_id_stock.setCellValueFactory(new PropertyValueFactory<>("id_stock"));
         row_libelle.setCellValueFactory(new PropertyValueFactory<>("libelle"));
@@ -388,10 +437,12 @@ public class DashboardController implements Initializable {
         row_description.setCellValueFactory(new PropertyValueFactory<>("description"));
         row_ref_fournisseur.setCellValueFactory(new PropertyValueFactory<>("refFournisseur"));
 
+
         tb_stock1.setItems(stockQuantiteListe);
     }
 
     public void ajouterStockVueListeAvecQuantite() {
+
         ObservableList<StockQuantite> stockQuantiteListe = ajouterStockListeAvecQuantite();
 
 
@@ -402,12 +453,9 @@ public class DashboardController implements Initializable {
         tc_idFournisseur.setCellValueFactory(new PropertyValueFactory<>("refFournisseur"));
 
 
-        tb_stock.getItems().addAll(stockQuantiteListe);
-
-        for (StockQuantite sq : stockQuantiteListe) {
-            System.out.println("Stock: " + sq.getLibelle() + ", Quantité: " + sq.getQuantite1());
-        }
+        tb_stock.getItems().setAll(stockQuantiteListe);
     }
+
 
     public void switchForm(ActionEvent event) {
 
@@ -442,6 +490,8 @@ public class DashboardController implements Initializable {
 
 
 
+
+
     public void minimize() {
         Stage stage = (Stage) Ap_mainMain.getScene().getWindow();
         stage.setIconified(true);
@@ -451,6 +501,7 @@ public class DashboardController implements Initializable {
     public void close(){
         System.exit(0);
     }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -477,6 +528,10 @@ public class DashboardController implements Initializable {
         SpinnerValueFactory<Integer> valueFactory3 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
         valueFactory3.setValue(0);
         sp_quantite2.setValueFactory(valueFactory3);
+
+        SpinnerValueFactory<Integer> valueFactory5 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
+        valueFactory3.setValue(0);
+        sp_quantite11.setValueFactory(valueFactory3);
 
 
     }

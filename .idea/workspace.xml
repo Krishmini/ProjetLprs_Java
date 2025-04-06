@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="-">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="Methode demande de fourniture et methode pour utiliser materiel en stock">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/SessionUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/SessionUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Utilisateur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/connexionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/connexionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +221,7 @@
       <workItem from="1742555203188" duration="103000" />
       <workItem from="1742758969303" duration="3974000" />
       <workItem from="1743530439520" duration="2416000" />
-      <workItem from="1743894953313" duration="8334000" />
+      <workItem from="1743894953313" duration="14514000" />
     </task>
     <task id="LOCAL-00001" summary="Gestion de stock, vue et OnClick">
       <option name="closed" value="true" />
@@ -243,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741018271126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Methode demande de fourniture et methode pour utiliser materiel en stock">
+      <option name="closed" value="true" />
+      <created>1743943030908</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743943030908</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +270,8 @@
     <MESSAGE value="Update Tableau et commande de produit" />
     <MESSAGE value="Gestion de stock, vue et OnClick" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="Methode demande de fourniture et methode pour utiliser materiel en stock" />
+    <option name="LAST_COMMIT_MESSAGE" value="Methode demande de fourniture et methode pour utiliser materiel en stock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

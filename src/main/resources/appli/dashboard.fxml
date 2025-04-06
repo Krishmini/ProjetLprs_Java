@@ -151,7 +151,7 @@
                         <Line endX="508.40008544921875" layoutX="132.0" layoutY="129.0" startX="-119.60001373291016" stroke="#186581" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="an_commande" layoutX="184.0" layoutY="117.0" prefHeight="454.4" prefWidth="652.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <AnchorPane fx:id="an_commande" layoutX="184.0" layoutY="117.0" prefHeight="454.4" prefWidth="652.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <AnchorPane layoutX="238.0" layoutY="5.0" prefHeight="444.0" prefWidth="408.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
                            <children>
@@ -167,6 +167,7 @@
 
                               <TextField fx:id="tx_recherche" layoutX="5.0" layoutY="26.0" prefHeight="26.0" prefWidth="177.0" text="   Recherche..." />
                               <FontAwesomeIconView fill="#8c8888" glyphName="SEARCH" layoutX="8.0" layoutY="43.0" text="" />
+                              <Button fx:id="bt_miseAJour" layoutX="248.0" layoutY="26.0" mnemonicParsing="false"  prefHeight="26.0" prefWidth="149.0" text="Mise à jour" />
                            </children>
                         </AnchorPane>
                         <AnchorPane fx:id="Ap_DmPr" layoutX="8.0" layoutY="5.0" prefHeight="444.0" prefWidth="222.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
@@ -206,7 +207,7 @@
                               </FontAwesomeIconView>
                            </children>
                         </AnchorPane>
-                        <AnchorPane fx:id="Ap_DmPr1" layoutX="8.0" layoutY="6.0" prefHeight="444.0" prefWidth="222.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);" visible="false">
+                        <AnchorPane fx:id="Ap_DmPr1" layoutX="8.0" layoutY="6.0" prefHeight="444.0" prefWidth="222.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
                            <children>
                               <Button fx:id="bt_demande1" layoutX="21.0" layoutY="347.0" mnemonicParsing="false" onAction="#switchFormDemande" prefHeight="16.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Produit existe déjà en stock" textFill="#48d4ff">
                                  <font>
@@ -220,7 +221,7 @@
                               <Label layoutX="10.0" layoutY="134.0" text="article :" />
                               <Label layoutX="4.0" layoutY="172.0" text="quantité :" />
                               <Label layoutX="10.0" layoutY="213.0" text="raison :" />
-                              <Button fx:id="bt_envoyer11" layoutX="58.0" layoutY="379.0" mnemonicParsing="false" onAction="#demandeCommande" prefHeight="26.0" prefWidth="149.0" text="Envoyer" />
+                              <Button fx:id="bt_envoyer11" layoutX="58.0" layoutY="379.0" mnemonicParsing="false" onAction="#demandeCommande2" prefHeight="26.0" prefWidth="149.0" text="Envoyer" />
                               <Spinner fx:id="sp_quantite11" layoutX="58.0" layoutY="168.0" />
                               <FontAwesomeIconView glyphName="PLUS" layoutX="95.0" layoutY="99.0" size="70">
                                  <fill>
@@ -245,7 +246,7 @@
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="an_utiliser" layoutX="6.0" layoutY="-4.0" prefHeight="460.0" prefWidth="646.0">
+                  <AnchorPane fx:id="an_utiliser" layoutX="6.0" layoutY="-4.0" prefHeight="460.0" prefWidth="646.0" visible="false">
                      <children>
                         <AnchorPane layoutY="14.0" prefHeight="439.0" prefWidth="404.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
                            <children>
@@ -260,6 +261,7 @@
                               </TableView>
                               <TextField fx:id="tf_recherche" layoutX="5.0" layoutY="26.0" prefHeight="26.0" prefWidth="177.0" promptText="tf_BarreRechereche" text="   Recherche..." />
                               <FontAwesomeIconView fill="#8c8888" glyphName="SEARCH" layoutX="8.0" layoutY="43.0" text="" />
+                              <Button fx:id="bt_miseAJour1" layoutX="241.0" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Mise à jour" />
                            </children>
                         </AnchorPane>
                         <AnchorPane layoutX="407.0" layoutY="14.0" prefHeight="438.0" prefWidth="230.0" style="-fx-background-radius: 8px; -fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);">
