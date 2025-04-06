@@ -27,6 +27,9 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
+    private Connection connection;
+    @FXML
+    public AnchorPane Ap_moins;
 
     public AnchorPane Main;
     @FXML
@@ -69,6 +72,8 @@ public class DashboardController implements Initializable {
 
     @FXML
     private Button bt_logout;
+    @FXML
+    private TableView<StockQuantite> tb_stock1;
 
     @FXML
     private Button bt_utPr;
@@ -88,6 +93,7 @@ public class DashboardController implements Initializable {
 
     @FXML
     private TableColumn<StockQuantite, Integer> row_ref_fournisseur;
+
 
     @FXML
     private Spinner<Integer> sp_id_stock;
@@ -180,76 +186,98 @@ public class DashboardController implements Initializable {
         tb_stock.setItems(filteredData);
     }
 
-    private String getCurrentUserEmail()   {
-        Utilisateur user = SessionUtilisateur.getInstance().getUtilisateur();
-        return (user != null) ? user.getMail() : null;
-    }
-    private int getCurrentUserId() {
-        String sql = "SELECT id_utilisateur FROM utilisateur WHERE mail = ?";
-        connect = database.getConnexion();
 
-        try (PreparedStatement pstmt = connect.prepareStatement(sql)) {
-            pstmt.setString(1, getCurrentUserEmail());
 
-            try (ResultSet rs = pstmt.executeQuery()) {
-                if (rs.next()) {
-                    return rs.getInt("id_utilisateur");
-                }
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
+    @FXML
+    private void demandeCommande(ActionEvent event) {
+
+        int idStock = sp_idstock.getValue();
+        int quantite = sp_quantite2.getValue();
+        String raison = tf_raison.getText();
+        int utilisateurId = Model.SessionUtilisateur.getUtilisateurId();
+
+
+        System.out.println("ID utilisateur courant : " + utilisateurId);
+
+        if (raison.isEmpty()) {
+            showAlert("Erreur", "Veuillez entrer une raison.");
+            return;
         }
-        return -1;
-    }
-    public void demandeCommande() {
-        String sql = "INSERT INTO demandefourniture (quantite, raison, ref_stock, ref_utilisateur) VALUES (?, ?, ?, ?)";
-        connect = database.getConnexion();
 
-        try (PreparedStatement pstmt = connect.prepareStatement(sql)) {
-            int quantite = sp_quantite2.getValue();
-            String raison = tf_raison.getText();
-            int refStock = sp_idstock.getValue();
-            int refUtilisateur = getCurrentUserId();
+        String sql = "INSERT INTO demandeFourniture (article, quantite, raison, approuver, ref_stock, ref_utilisateur) VALUES (?, ?, ?, NULL, ?, ?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, getNomArticle(idStock));
+            statement.setInt(2, quantite);
+            statement.setString(3, raison);
+            statement.setInt(4, idStock);
+            statement.setInt(5, utilisateurId);
 
-            pstmt.setInt(1, quantite);
-            pstmt.setString(2, raison);
-            pstmt.setInt(3, refStock);
-            pstmt.setInt(4, refUtilisateur);
-
-            if (pstmt.executeUpdate() > 0) {
-                System.out.println("Demande de fourniture ajoutée avec succès!");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-    public void demandeCommande1() {
-        String sql = "INSERT INTO demandefourniture (article, quantite, raison, ref_utilisateur)"
-                + " VALUES (?, ?, ?, ?)";
-
-        Connection connect = database.getConnexion();
-
-        try (PreparedStatement pstmt = connect.prepareStatement(sql)) {
-
-            String article = tf_article.getText();
-            int quantite = (int) sp_quantite.getValue();
-            String raison = tf_raison.getText();
-            int refUtilisateur = getCurrentUserId();
-
-
-            pstmt.setString(1, article);
-            pstmt.setInt(2, quantite);
-            pstmt.setString(3, raison);
-            pstmt.setInt(4, refUtilisateur);
-
-            int rowsInserted = pstmt.executeUpdate();
+            int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {
-                System.out.println("Demande de fourniture ajoutée avec succès!");
+                showAlert("Succès", "Demande envoyée avec succès !");
+                tf_raison.clear();
+            } else {
+                showAlert("Erreur", "Échec de la demande. Veuillez réessayer.");
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            showAlert("Erreur", "Problème lors de l'insertion dans la base de données : " + e.getMessage());
         }
     }
+    @FXML
+    private void UseStock(ActionEvent event) {
+
+        int idStock = sp_id_stock.getValue();
+        int quantite = sp_quantite.getValue();
+
+
+        int utilisateurId = Model.SessionUtilisateur.getUtilisateurId();
+
+        System.out.println("ID utilisateur courant : " + utilisateurId);
+
+
+        String sql = "UPDATE stock SET nombre_stock = nombre_stock - ? WHERE id_stock = ? AND nombre_stock >= ?";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setInt(1, quantite);
+            statement.setInt(2, idStock);
+            statement.setInt(3, quantite);
+
+
+            int rowsUpdated = statement.executeUpdate();
+            if (rowsUpdated > 0) {
+                showAlert("Succès", "Stock mis à jour avec succès !");
+            } else {
+                showAlert("Erreur", "La quantité en stock est insuffisante ou une erreur est survenue.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            showAlert("Erreur", "Problème lors de l'insertion dans la base de données : " + e.getMessage());
+        }
+    }
+
+    private String getNomArticle(int idStock) {
+        String libelle = "Article inconnu";
+        String sql = "SELECT libelle FROM stock WHERE id_stock = ?";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setInt(1, idStock);
+            ResultSet rs = statement.executeQuery();
+            if (rs.next()) {
+                libelle = rs.getString("libelle");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return libelle;
+    }
+    private void showAlert(String title, String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
     public ObservableList<Quantite> ajouterStockListe2() {
         ObservableList<Quantite> stockListe2 = FXCollections.observableArrayList();
         String sql = "SELECT * FROM quantite ORDER BY ref_stock";
@@ -351,6 +379,18 @@ public class DashboardController implements Initializable {
         return stockQuantiteListe;
     }
 
+    public void ajouterStockVueListeAvecQuantite2() {
+        ObservableList<StockQuantite> stockQuantiteListe = ajouterStockListeAvecQuantite();
+
+        row_id_stock.setCellValueFactory(new PropertyValueFactory<>("id_stock"));
+        row_libelle.setCellValueFactory(new PropertyValueFactory<>("libelle"));
+        row_nombre_stock.setCellValueFactory(new PropertyValueFactory<>("quantite1"));
+        row_description.setCellValueFactory(new PropertyValueFactory<>("description"));
+        row_ref_fournisseur.setCellValueFactory(new PropertyValueFactory<>("refFournisseur"));
+
+        tb_stock1.setItems(stockQuantiteListe);
+    }
+
     public void ajouterStockVueListeAvecQuantite() {
         ObservableList<StockQuantite> stockQuantiteListe = ajouterStockListeAvecQuantite();
 
@@ -414,11 +454,20 @@ public class DashboardController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        Database db = new Database();
+        connection = db.getConnexion();
+
         ajouterStockVueListeAvecQuantite();
+        ajouterStockVueListeAvecQuantite2();
+
 
         SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
         valueFactory.setValue(0);
         sp_idstock.setValueFactory(valueFactory);
+
+        SpinnerValueFactory<Integer> valueFactory4 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
+        valueFactory.setValue(0);
+        sp_id_stock.setValueFactory(valueFactory4);
 
 
         SpinnerValueFactory<Integer> valueFactory2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
@@ -429,7 +478,7 @@ public class DashboardController implements Initializable {
         valueFactory3.setValue(0);
         sp_quantite2.setValueFactory(valueFactory3);
 
-        ajouterStockVueListeAvecQuantite();
+
     }
     public void logout1(ActionEvent event){
         stage = (Stage) Main.getScene().getWindow();

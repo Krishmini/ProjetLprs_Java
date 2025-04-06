@@ -1,27 +1,13 @@
 package Model;
 
 public class SessionUtilisateur {
-    private static SessionUtilisateur instance;
-    private Utilisateur utilisateur;
+    private static int utilisateurId;
 
-    private SessionUtilisateur() {}
-
-    public static SessionUtilisateur getInstance() {
-        if (instance == null) {
-            instance = new SessionUtilisateur();
-        }
-        return instance;
+    public static void setUtilisateurId(int id) {
+        utilisateurId = id;
     }
 
-    public void setUtilisateur(Utilisateur utilisateur) {
-        this.utilisateur = utilisateur;
-    }
-
-    public Utilisateur getUtilisateur() {
-        return utilisateur;
-    }
-
-    public void clearSession() {
-        utilisateur = null;
+    public static int getUtilisateurId() {
+        return utilisateurId;
     }
 }

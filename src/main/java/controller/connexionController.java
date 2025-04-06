@@ -1,5 +1,6 @@
 package controller;
 
+import Model.Utilisateur;
 import database.Database;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,6 +19,8 @@ import java.sql.ResultSet;
 import java.util.Optional;
 
 public class connexionController {
+    private Connection connection;
+
     @FXML
     public TextField mailField;
     @FXML
@@ -33,7 +36,7 @@ public class connexionController {
     @FXML
     private Button bt_rd_connexion;
 
-    private Connection connection;
+
 
     public Button inscription;
     @FXML
@@ -65,6 +68,7 @@ public class connexionController {
             if (resultSet.next()) {
                 int utilisateurId = resultSet.getInt("id_utilisateur");
                 String role = resultSet.getString("role").toLowerCase();
+                Model.SessionUtilisateur.setUtilisateurId(utilisateurId);
                 enregistrerConnexion(utilisateurId, "Connexion réussie");
 
 
