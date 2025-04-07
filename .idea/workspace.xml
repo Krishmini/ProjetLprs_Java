@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4316f9d8-1b46-4e44-b79b-64b495c16f6a" name="Changes" comment="Methode demande de fourniture et methode pour utiliser materiel en stock">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardGestionaireController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboardGestionnaire.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EspaceGestionnaireController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -61,7 +63,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/wamp64/www/test/ProjetLprs_Java/src/main/java/controller",
+    "last_opened_file_path": "C:/wamp64/www/test/ProjetLprs_Java/src/main/resources/appli",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,8 +77,8 @@
       <recent name="appli" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\test\ProjetLprs_Java\src\main\java\controller" />
       <recent name="C:\wamp64\www\test\ProjetLprs_Java\src\main\resources\appli" />
+      <recent name="C:\wamp64\www\test\ProjetLprs_Java\src\main\java\controller" />
       <recent name="C:\Lprs-java\src\main\resources\appli" />
       <recent name="C:\Lprs-java\src\main\java\Model" />
       <recent name="C:\Lprs-java\src\main\java\Controller" />
@@ -222,6 +224,7 @@
       <workItem from="1742758969303" duration="3974000" />
       <workItem from="1743530439520" duration="2416000" />
       <workItem from="1743894953313" duration="14514000" />
+      <workItem from="1743969498273" duration="10066000" />
     </task>
     <task id="LOCAL-00001" summary="Gestion de stock, vue et OnClick">
       <option name="closed" value="true" />

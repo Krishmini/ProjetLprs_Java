@@ -46,7 +46,7 @@ public class EspaceGestionnaireController {
 
 
      public void handleDemandeReapprovisionnement(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/dashboard.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/appli/dashboardGestionnaire.fxml"));
         Parent root = loader.load();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
